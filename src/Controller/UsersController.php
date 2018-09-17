@@ -13,6 +13,19 @@ use App\Controller\AppController;
 class UsersController extends AppController
 {
 
+    public function initialize()
+{
+    parent::initialize();
+    // Ajoute l'action 'add' à la liste des actions autorisées.
+    $this->Auth->allow(['logout', 'add']);
+}
+
+public function logout()
+{
+    $this->Flash->success('Vous avez été déconnecté.');
+    return $this->redirect($this->Auth->logout());
+}
+
     /**
      * Index method
      *
