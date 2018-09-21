@@ -51,6 +51,7 @@ class CarsController extends AppController
         $car = $this->Cars->newEntity();
         if ($this->request->is('post')) {
             $car = $this->Cars->patchEntity($car, $this->request->getData());
+            $car->user_id = $this->Auth->user('id');
             if ($this->Cars->save($car)) {
                $this->Flash->success(__('The car has been saved.'));
 
@@ -104,4 +105,24 @@ class CarsController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function isAuthorized($user)
+{
+    $action = $this->request->getParam('action');
+    // The add and tags actions are always allowed to logged in users.
+    if (in_array($action, ['add', 'tags'])) {
+        return true;
+    }
+
+    // All other actions require a slug.
+    $slug = $this->request->getParam('pass.0');
+    if (!$slug) {
+        return false;
+    }
+
+    // Check that the article belongs to the current user.
+    $article = $this->Articles->findBySlug($slug)->first();
+
+    return $article->user_id === $user['id'];
+}
 }

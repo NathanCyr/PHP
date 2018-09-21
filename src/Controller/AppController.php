@@ -74,4 +74,11 @@ class AppController extends Controller
         $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
     }
 }
+
+public function isAuthorized($user)
+{
+    // By default deny access.
+    return false;
+}
+
 }
