@@ -347,3 +347,1018 @@ Stack Trace:
 #31 {main}
 
 
+2018-09-24 16:37:31 Error: [ParseError] syntax error, unexpected 'return' (T_RETURN)
+Request URL: /cars/add
+Referer URL: http://localhost/CyrNathan_TP1/cars/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\composer\ClassLoader.php(301): Composer\Autoload\includeFile('C:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Ca...', 'App')
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(246): Cake\Core\App::className('Cars', 'Model/Table', 'Table')
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(194): Cake\ORM\Locator\TableLocator->_getClassName('Cars', Array)
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Cars')
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(377): Cake\Controller\Controller->loadModel('Cars')
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(51): Cake\Controller\Controller->__get('Cars')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\CarsController->add()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#28 {main}
+
+
+2018-09-24 16:38:05 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.parent_parts' doesn't exist
+Request URL: /parts/add
+Referer URL: http://localhost/CyrNathan_TP1/cars/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'parent_parts', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1758): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1350): Cake\ORM\Table->query()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\PartsController->add()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-09-24 16:38:07 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.parent_parts' doesn't exist
+Request URL: /parts/add
+Referer URL: http://localhost/CyrNathan_TP1/cars/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'parent_parts', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1758): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1350): Cake\ORM\Table->query()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\PartsController->add()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#27 {main}
+
+
+2018-09-28 12:41:59 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.parent_parts' doesn't exist
+Request URL: /parts
+Referer URL: http://localhost/CyrNathan_TP1/cars/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'parent_parts', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(524): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(479): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\PartsTable), Object(Cake\Database\TypeMap), Array)
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(840): Cake\ORM\Query->contain(Array)
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2402): Cake\ORM\Query->applyOptions(Array)
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1353): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\PartsTable), Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\PartsTable), Array)
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\PartsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\PartsTable))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\PartsController->index()
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#31 {main}
+
+
+2018-09-28 12:42:35 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cars.slug' in 'where clause'
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(128): Cake\ORM\Query->first()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+
+
+2018-09-28 12:43:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cars.slug' in 'where clause'
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(124): Cake\ORM\Query->first()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+
+
+2018-09-28 12:46:25 Error: [Error] Call to a member function findBySlug() on boolean
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-09-28 12:46:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cars.slug' in 'where clause'
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(124): Cake\ORM\Query->first()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+
+
+2018-09-28 12:50:55 Error: [Error] Call to a member function findBySlug() on boolean
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-09-28 12:51:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cars.slug' in 'where clause'
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(124): Cake\ORM\Query->first()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+
+
+2018-09-28 12:52:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cars.slug' in 'where clause'
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(124): Cake\ORM\Query->first()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+
+
+2018-09-28 12:52:30 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=853 in [C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-28 12:52:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-28 12:52:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-28 12:52:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:853) in [C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-28 12:52:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cars.slug' in 'where clause'
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(124): Cake\ORM\Query->first()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+
+
+2018-09-28 12:58:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cars.slug' in 'where clause'
+Request URL: /cars/delete/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(124): Cake\ORM\Query->first()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+
+
+2018-09-28 13:00:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Cars.slug' in 'where clause'
+Request URL: /cars/edit/1
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(195): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1127): Cake\Database\Query->execute()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(309): Cake\ORM\Query->_execute()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(1074): Cake\ORM\Query->_all()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(471): Cake\ORM\Query->all()
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\CarsController.php(124): Cake\ORM\Query->first()
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Auth\ControllerAuthorize.php(93): App\Controller\CarsController->isAuthorized(Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(540): Cake\Auth\ControllerAuthorize->authorize(Array, Object(Cake\Http\ServerRequest))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(326): Cake\Controller\Component\AuthComponent->isAuthorized(Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(276): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->startup(Object(Cake\Event\Event))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(662): Cake\Controller\Controller->dispatchEvent('Controller.star...')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+
+
+2018-09-28 13:02:04 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.parent_parts' doesn't exist
+Request URL: /parts
+Referer URL: http://localhost/CyrNathan_TP1/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'parent_parts', Array, Object(Cake\Database\Schema\TableSchema))
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(548): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(673): Cake\ORM\Table->getSchema()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(524): Cake\ORM\Table->getPrimaryKey()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(479): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\PartsTable), Object(Cake\Database\TypeMap), Array)
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(840): Cake\ORM\Query->contain(Array)
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2402): Cake\ORM\Query->applyOptions(Array)
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1353): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\PartsTable), Array, Array)
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(872): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\PartsTable), Array)
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\PartsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\PartsTable))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\PartsController->index()
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#31 {main}
+
+
+2018-09-28 13:33:29 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\UsersController.php(51): Cake\ORM\Table->get(Array, Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->view()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-28 13:33:50 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\UsersController.php(51): Cake\ORM\Table->get(Array, Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->view()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-28 13:39:36 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\UsersController.php(51): Cake\ORM\Table->get(Array, Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->view()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-28 13:42:27 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /
+Referer URL: http://localhost/CyrNathan_TP1/users/login
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(95): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\HelperRegistry.php(67): Cake\Core\ObjectRegistry->load('Auth')
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(1129): Cake\View\HelperRegistry->__isset('Auth')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Template\Layout\default.ctp(47): Cake\View\View->__get('Auth')
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(1240): include('C:\\Program File...')
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(850): Cake\View\View->_render('C:\\Program File...')
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(808): Cake\View\View->renderLayout('', 'default')
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-09-28 13:42:33 Error: [Cake\View\Exception\MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => NULL,
+)
+Request URL: /users/login
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(95): Cake\View\HelperRegistry->_throwMissingClassError('Auth', NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\HelperRegistry.php(67): Cake\Core\ObjectRegistry->load('Auth')
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(1129): Cake\View\HelperRegistry->__isset('Auth')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Template\Layout\default.ctp(47): Cake\View\View->__get('Auth')
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(1240): include('C:\\Program File...')
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(850): Cake\View\View->_render('C:\\Program File...')
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\View\View.php(808): Cake\View\View->renderLayout('', 'default')
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(777): Cake\View\View->render(NULL, NULL)
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-09-28 14:01:22 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view
+Referer URL: http://localhost/CyrNathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\UsersController.php(51): Cake\ORM\Table->get(Array, Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->view()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-28 14:02:28 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/view/test%40test.ca
+Referer URL: http://localhost/CyrNathan_TP1/users/view/2
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\UsersController.php(51): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->view('test@test.ca')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2018-09-28 14:03:00 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/view/test%40test.ca
+Referer URL: http://localhost/CyrNathan_TP1/users/view/2
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1613): Cake\ORM\Query->firstOrFail()
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\UsersController.php(51): Cake\ORM\Table->get(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->view('test@test.ca')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+
+
+2018-09-28 14:03:05 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view
+Referer URL: http://localhost/CyrNathan_TP1/users/view/2
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\UsersController.php(51): Cake\ORM\Table->get(Array, Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->view()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-28 14:06:35 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Route\Route.php, line 797]
+Request URL: /users/view/2
+Referer URL: http://localhost/CyrNathan_TP1/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+Cake\Routing\Route\Route::_writeUrl() - CORE\src\Routing\Route\Route.php, line 797
+Cake\Routing\Route\Route::match() - CORE\src\Routing\Route\Route.php, line 752
+Cake\Routing\Route\DashedRoute::match() - CORE\src\Routing\Route\DashedRoute.php, line 104
+Cake\Routing\RouteCollection::match() - CORE\src\Routing\RouteCollection.php, line 341
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 683
+Cake\View\Helper\UrlHelper::build() - CORE\src\View\Helper\UrlHelper.php, line 56
+Cake\View\Helper\HtmlHelper::link() - CORE\src\View\Helper\HtmlHelper.php, line 354
+include - APP/Template\Layout\default.ctp, line 49
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2018-09-28 14:06:41 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view
+Referer URL: http://localhost/CyrNathan_TP1/users/view/2
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\src\Controller\UsersController.php(51): Cake\ORM\Table->get(Array, Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(596): App\Controller\UsersController->view()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(107): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#19 {main}
+
+
+2018-09-28 14:06:42 Warning: Warning (2): rawurlencode() expects parameter 1 to be string, array given in [C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Route\Route.php, line 797]
+Request URL: /users/view/2
+Referer URL: http://localhost/CyrNathan_TP1/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 41
+rawurlencode - [internal], line ??
+array_map - [internal], line ??
+Cake\Routing\Route\Route::_writeUrl() - CORE\src\Routing\Route\Route.php, line 797
+Cake\Routing\Route\Route::match() - CORE\src\Routing\Route\Route.php, line 752
+Cake\Routing\Route\DashedRoute::match() - CORE\src\Routing\Route\DashedRoute.php, line 104
+Cake\Routing\RouteCollection::match() - CORE\src\Routing\RouteCollection.php, line 341
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 683
+Cake\View\Helper\UrlHelper::build() - CORE\src\View\Helper\UrlHelper.php, line 56
+Cake\View\Helper\HtmlHelper::link() - CORE\src\View\Helper\HtmlHelper.php, line 354
+include - APP/Template\Layout\default.ctp, line 49
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 850
+Cake\View\View::render() - CORE\src\View\View.php, line 808
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 777
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 126
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Middleware\CsrfProtectionMiddleware::__invoke() - CORE\src\Http\Middleware\CsrfProtectionMiddleware.php, line 107
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+DebugKit\Middleware\DebugKitMiddleware::__invoke() - ROOT\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 53
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+[main] - ROOT\webroot\index.php, line 40
+
+
+

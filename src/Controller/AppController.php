@@ -42,6 +42,7 @@ class AppController extends Controller
         // Code existant
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
+            'authorize'=> 'Controller',
             'authenticate' => [
                 'Form' => [
                     'fields' => [
@@ -60,23 +61,19 @@ class AppController extends Controller
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        $this->Auth->allow(['display', 'view', 'index', 'add']);
+        $this->Auth->allow(['display', 'view', 'index']);
     }
 
-    public function login()
-{
-    if ($this->request->is('post')) {
-        $user = $this->Auth->identify();
-        if ($user) {
-            $this->Auth->setUser($user);
-            return $this->redirect($this->Auth->redirectUrl());
-        }
-        $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
-    }
-}
+    
 
 public function isAuthorized($user)
 {
+    if(isset($user['role']) && $user['role'] === 'admin'){
+        return true;
+    }else if(isset($user['role']) && $user['role'] === 'super'){
+        $this->Auth->allow(['edit', 'delete']);
+    }
+
     // By default deny access.
     return false;
 }

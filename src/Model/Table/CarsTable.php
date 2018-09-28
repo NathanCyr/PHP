@@ -77,8 +77,7 @@ class CarsTable extends Table
         $validator
             ->scalar('other_car_details')
             ->maxLength('other_car_details', 255)
-            ->requirePresence('other_car_details', 'create')
-            ->notEmpty('other_car_details');
+            ->allowEmpty('other_car_details');
 
         return $validator;
     }
