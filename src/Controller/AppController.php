@@ -68,14 +68,23 @@ class AppController extends Controller
 
 public function isAuthorized($user)
 {
-    if(isset($user['role']) && $user['role'] === 'admin'){
-        return true;
-    }else if(isset($user['role']) && $user['role'] === 'super'){
-        $this->Auth->allow(['edit', 'delete']);
+    $action = $this->request->getParam('action');
+    if(in_array($action,['add'])){
+        if($user['role']=='admin'){
+            return true;
+        }
+    }else if(in_array($action,['edit', 'delete'])){
+        if($user['role']=='super'){
+            return true;
+        }
+    }else if(in_array($action['view'])){
+        if($user['role']=='user'){
+            return true;
+        }
+    }else{
+        return false;
     }
-
-    // By default deny access.
-    return false;
+    
 }
 
 }
