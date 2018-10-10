@@ -16,6 +16,7 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+use Cake\I18n\I18n;
 
 /**
  * Application Controller
@@ -39,6 +40,9 @@ class AppController extends Controller
      */
     public function initialize()
     {
+
+        I18n::setLocale($this->request->session()->read('Config.language'));
+
         // Code existant
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
@@ -61,7 +65,7 @@ class AppController extends Controller
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        $this->Auth->allow(['display', 'view', 'index']);
+        $this->Auth->allow(['display', 'view', 'index', 'changelang']);
     }
 
     
@@ -85,6 +89,12 @@ public function isAuthorized($user)
         return false;
     }
     
+}
+
+public function changeLang($lang = 'en_US') {
+    I18n::setLocale($lang);
+    $this->request->session()->write('Config.language', $lang);
+    return $this->redirect($this->request->referer());
 }
 
 }
