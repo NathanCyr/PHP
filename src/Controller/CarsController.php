@@ -25,6 +25,7 @@ class CarsController extends AppController
         $this->set(compact('cars'));
     }
 
+
     /**
      * View method
      *

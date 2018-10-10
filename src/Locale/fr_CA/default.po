@@ -1,0 +1,450 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-10 17:44+0000\n"
+"PO-Revision-Date: 2018-10-10 13:59-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.1.1\n"
+"Last-Translator: \n"
+"Language: fr_CA\n"
+
+#: Controller/CarsController.php:56;80
+msgid "The car has been saved."
+msgstr "La voiture a été sauvegardée."
+
+#: Controller/CarsController.php:60;84
+msgid "The car could not be saved. Please, try again."
+msgstr "La voiture n'a pas pu être sauvegardée. S'il vous plaît, essayez encore."
+
+#: Controller/CarsController.php:101
+msgid "The car has been deleted."
+msgstr "La voiture a été supprimée."
+
+#: Controller/CarsController.php:103
+msgid "The car could not be deleted. Please, try again."
+msgstr "La voiture n'a pas pu être supprimée. S'il vous plaît, essayez encore."
+
+#: Controller/PartsController.php:58;85
+msgid "The part has been saved."
+msgstr "La pièce a été sauvegardée."
+
+#: Controller/PartsController.php:62;89
+msgid "The part could not be saved. Please, try again."
+msgstr "La pièce n'a pas pu être sauvegardée. S'Il vous plaît, essayez encore."
+
+#: Controller/PartsController.php:109
+msgid "The part has been deleted."
+msgstr "La pièce a été supprimée."
+
+#: Controller/PartsController.php:111
+msgid "The part could not be deleted. Please, try again."
+msgstr "La pièce n'a pas pu être supprimée. S'Il vous plaît, essayez encore."
+
+#: Controller/RefPartManufacturersController.php:55;79
+msgid "The ref part manufacturer has been saved."
+msgstr "Le fabricant de la pièce de référence a été enregistré."
+
+#: Controller/RefPartManufacturersController.php:59;83
+msgid "The ref part manufacturer could not be saved. Please, try again."
+msgstr "Le fabricant de la pièce de référence n'a pas pu être enregistré. Veuillez réessayer."
+
+#: Controller/RefPartManufacturersController.php:100
+msgid "The ref part manufacturer has been deleted."
+msgstr "Le fabricant de la pièce de référence a été supprimé."
+
+#: Controller/RefPartManufacturersController.php:102
+msgid "The ref part manufacturer could not be deleted. Please, try again."
+msgstr "Le fabricant de la pièce de référence n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/RefPartTypesController.php:55;79
+msgid "The ref part type has been saved."
+msgstr "Le type de pièce de référence a été enregistré."
+
+#: Controller/RefPartTypesController.php:59;83
+msgid "The ref part type could not be saved. Please, try again."
+msgstr "Le type de pièce de référence n'a pas pu être enregistré. Veuillez réessayer."
+
+#: Controller/RefPartTypesController.php:100
+msgid "The ref part type has been deleted."
+msgstr "Le type de pièce de référence a été supprimé."
+
+#: Controller/RefPartTypesController.php:102
+msgid "The ref part type could not be deleted. Please, try again."
+msgstr "Le type de pièce de référence n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/SuppliersController.php:55;79
+msgid "The supplier has been saved."
+msgstr "Le fournisseur a été enregistré."
+
+#: Controller/SuppliersController.php:59;83
+msgid "The supplier could not be saved. Please, try again."
+msgstr "La voiture n'a pas pu être sauvée. Veuillez réessayer."
+
+#: Controller/SuppliersController.php:100
+msgid "The supplier has been deleted."
+msgstr "Le fournisseur a été supprimé."
+
+#: Controller/SuppliersController.php:102
+msgid "The supplier could not be deleted. Please, try again."
+msgstr "Le fournisseur n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Controller/UsersController.php:80;104
+msgid "The user has been saved."
+msgstr "L'utilisateur a été enregistré."
+
+#: Controller/UsersController.php:84;108
+msgid "The user could not be saved. Please, try again."
+msgstr "La voiture n'a pas pu être sauvée. Veuillez réessayer."
+
+#: Controller/UsersController.php:125
+msgid "The user has been deleted."
+msgstr "L'utilisateur a été supprimé."
+
+#: Controller/UsersController.php:127
+msgid "The user could not be deleted. Please, try again."
+msgstr "L'utilisateur n'a pas pu être supprimé. Veuillez réessayer."
+
+#: Template/Cars/add.ctp:9 Template/Cars/edit.ctp:9 Template/Cars/index.ctp:9;27
+#: Template/Cars/view.ctp:9;66 Template/Parts/add.ctp:9 Template/Parts/edit.ctp:9
+#: Template/Parts/index.ctp:9;33 Template/Parts/view.ctp:9 Template/RefPartManufacturers/add.ctp:9
+#: Template/RefPartManufacturers/edit.ctp:9 Template/RefPartManufacturers/index.ctp:9;22
+#: Template/RefPartManufacturers/view.ctp:9 Template/RefPartTypes/add.ctp:9
+#: Template/RefPartTypes/edit.ctp:9 Template/RefPartTypes/index.ctp:9;22 Template/RefPartTypes/view.ctp:9
+#: Template/Suppliers/add.ctp:9 Template/Suppliers/edit.ctp:9 Template/Suppliers/index.ctp:9;24
+#: Template/Suppliers/view.ctp:9;54 Template/Users/add.ctp:9 Template/Users/edit.ctp:9
+#: Template/Users/index.ctp:9;24 Template/Users/view.ctp:9
+msgid "Actions"
+msgstr "Actions"
+
+#: Template/Cars/add.ctp:10 Template/Cars/edit.ctp:16 Template/Cars/view.ctp:12 Template/Parts/add.ctp:11
+#: Template/Parts/edit.ctp:17 Template/Parts/index.ctp:11 Template/Parts/view.ctp:14
+msgid "List Cars"
+msgstr "Liste des voitures"
+
+#: Template/Cars/add.ctp:11 Template/Cars/edit.ctp:17 Template/Cars/index.ctp:11
+#: Template/Cars/view.ctp:14 Template/Parts/add.ctp:10 Template/Parts/edit.ctp:16
+#: Template/Parts/view.ctp:12 Template/Suppliers/add.ctp:11 Template/Suppliers/edit.ctp:17
+#: Template/Suppliers/index.ctp:11 Template/Suppliers/view.ctp:14
+msgid "List Parts"
+msgstr "Liste des pièces"
+
+#: Template/Cars/add.ctp:12 Template/Cars/edit.ctp:18 Template/Cars/index.ctp:12
+#: Template/Cars/view.ctp:15 Template/Parts/index.ctp:10 Template/Parts/view.ctp:13
+#: Template/Suppliers/add.ctp:12 Template/Suppliers/edit.ctp:18 Template/Suppliers/index.ctp:12
+#: Template/Suppliers/view.ctp:15
+msgid "New Part"
+msgstr "Nouvelle pièce"
+
+#: Template/Cars/add.ctp:18
+msgid "Add Car"
+msgstr "Ajouter une voiture"
+
+#: Template/Cars/add.ctp:26 Template/Cars/edit.ctp:32 Template/Parts/add.ctp:32
+#: Template/Parts/edit.ctp:38 Template/RefPartManufacturers/add.ctp:21
+#: Template/RefPartManufacturers/edit.ctp:27 Template/RefPartTypes/add.ctp:21
+#: Template/RefPartTypes/edit.ctp:27 Template/Suppliers/add.ctp:23 Template/Suppliers/edit.ctp:29
+#: Template/Users/add.ctp:23 Template/Users/edit.ctp:29
+msgid "Submit"
+msgstr "Soumettre"
+
+#: Template/Cars/edit.ctp:11 Template/Cars/index.ctp:43 Template/Cars/view.ctp:84
+#: Template/Parts/edit.ctp:11 Template/Parts/index.ctp:53 Template/RefPartManufacturers/edit.ctp:11
+#: Template/RefPartManufacturers/index.ctp:35 Template/RefPartTypes/edit.ctp:11
+#: Template/RefPartTypes/index.ctp:35 Template/Suppliers/edit.ctp:11 Template/Suppliers/index.ctp:37
+#: Template/Suppliers/view.ctp:72 Template/Users/edit.ctp:11 Template/Users/index.ctp:39
+msgid "Delete"
+msgstr "Effacer"
+
+#: Template/Cars/edit.ctp:13 Template/Cars/index.ctp:43 Template/Cars/view.ctp:11;84
+#: Template/Parts/edit.ctp:13 Template/Parts/index.ctp:53 Template/Parts/view.ctp:11
+#: Template/RefPartManufacturers/edit.ctp:13 Template/RefPartManufacturers/index.ctp:35
+#: Template/RefPartManufacturers/view.ctp:11 Template/RefPartTypes/edit.ctp:13
+#: Template/RefPartTypes/index.ctp:35 Template/RefPartTypes/view.ctp:11 Template/Suppliers/edit.ctp:13
+#: Template/Suppliers/index.ctp:37 Template/Suppliers/view.ctp:11;72 Template/Users/edit.ctp:13
+#: Template/Users/index.ctp:39 Template/Users/view.ctp:11
+msgid "Are you sure you want to delete # {0}?"
+msgstr "Êtes-vous sûr de vouloir supprimer # {0} ?"
+
+#: Template/Cars/edit.ctp:24 Template/Cars/view.ctp:10
+msgid "Edit Car"
+msgstr "Modifier la voiture"
+
+#: Template/Cars/index.ctp:10 Template/Cars/view.ctp:13 Template/Parts/add.ctp:12
+#: Template/Parts/edit.ctp:18 Template/Parts/index.ctp:12 Template/Parts/view.ctp:15
+msgid "New Car"
+msgstr "Nouvelle voiture"
+
+#: Template/Cars/index.ctp:16
+msgid "Cars"
+msgstr "Voitures"
+
+#: Template/Cars/index.ctp:41 Template/Cars/view.ctp:82 Template/Parts/index.ctp:51
+#: Template/RefPartManufacturers/index.ctp:33 Template/RefPartTypes/index.ctp:33
+#: Template/Suppliers/index.ctp:35 Template/Suppliers/view.ctp:70 Template/Users/index.ctp:37
+msgid "View"
+msgstr "Vue"
+
+#: Template/Cars/index.ctp:42 Template/Cars/view.ctp:83 Template/Parts/index.ctp:52
+#: Template/RefPartManufacturers/index.ctp:34 Template/RefPartTypes/index.ctp:34
+#: Template/Suppliers/index.ctp:36 Template/Suppliers/view.ctp:71 Template/Users/index.ctp:38
+msgid "Edit"
+msgstr "modifier"
+
+#: Template/Cars/index.ctp:51 Template/Parts/index.ctp:61 Template/RefPartManufacturers/index.ctp:43
+#: Template/RefPartTypes/index.ctp:43 Template/Suppliers/index.ctp:45 Template/Users/index.ctp:47
+msgid "first"
+msgstr "premier"
+
+#: Template/Cars/index.ctp:52 Template/Parts/index.ctp:62 Template/RefPartManufacturers/index.ctp:44
+#: Template/RefPartTypes/index.ctp:44 Template/Suppliers/index.ctp:46 Template/Users/index.ctp:48
+msgid "previous"
+msgstr "précédent"
+
+#: Template/Cars/index.ctp:54 Template/Parts/index.ctp:64 Template/RefPartManufacturers/index.ctp:46
+#: Template/RefPartTypes/index.ctp:46 Template/Suppliers/index.ctp:48 Template/Users/index.ctp:50
+msgid "next"
+msgstr "prochain"
+
+#: Template/Cars/index.ctp:55 Template/Parts/index.ctp:65 Template/RefPartManufacturers/index.ctp:47
+#: Template/RefPartTypes/index.ctp:47 Template/Suppliers/index.ctp:49 Template/Users/index.ctp:51
+msgid "last"
+msgstr "dernier"
+
+#: Template/Cars/index.ctp:57 Template/Parts/index.ctp:67 Template/RefPartManufacturers/index.ctp:49
+#: Template/RefPartTypes/index.ctp:49 Template/Suppliers/index.ctp:51 Template/Users/index.ctp:53
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "Page {{page}} sur {{pages}}, affichant le {{courant}} enregistrement (s) sur le {{nombre}} total"
+
+#: Template/Cars/view.ctp:11
+msgid "Delete Car"
+msgstr "Supprimer la voiture"
+
+#: Template/Cars/view.ctp:22
+msgid "Model"
+msgstr "Modèle"
+
+#: Template/Cars/view.ctp:26
+msgid "Other Car Details"
+msgstr "Autres détails de la voiture"
+
+#: Template/Cars/view.ctp:30;55 Template/Parts/view.ctp:36 Template/RefPartManufacturers/view.ctp:24
+#: Template/RefPartTypes/view.ctp:24 Template/Suppliers/view.ctp:22;43 Template/Users/view.ctp:32
+msgid "Id"
+msgstr "Id"
+
+#: Template/Cars/view.ctp:34
+msgid "Car Manufacturer Code"
+msgstr "Code du constructeur automobile"
+
+#: Template/Cars/view.ctp:38
+msgid "Car Year Of Manufacture"
+msgstr "Année de fabrication"
+
+#: Template/Cars/view.ctp:42;64 Template/Parts/view.ctp:60 Template/RefPartManufacturers/view.ctp:28
+#: Template/RefPartTypes/view.ctp:28 Template/Suppliers/view.ctp:30;52 Template/Users/view.ctp:36
+msgid "Created"
+msgstr "Créé"
+
+#: Template/Cars/view.ctp:46;65 Template/Parts/view.ctp:64 Template/RefPartManufacturers/view.ctp:32
+#: Template/RefPartTypes/view.ctp:32 Template/Suppliers/view.ctp:34;53 Template/Users/view.ctp:40
+msgid "Modified"
+msgstr "Modifié"
+
+#: Template/Cars/view.ctp:51 Template/Suppliers/view.ctp:39
+msgid "Related Parts"
+msgstr "Pièces connexes"
+
+#: Template/Cars/view.ctp:56 Template/Suppliers/view.ctp:44
+msgid "Car Id"
+msgstr "Id de voiture"
+
+#: Template/Cars/view.ctp:57 Template/Parts/view.ctp:40 Template/Suppliers/view.ctp:45
+msgid "Parent Part Id"
+msgstr "Identifiant de la pièce mère"
+
+#: Template/Cars/view.ctp:58 Template/Parts/view.ctp:44 Template/Suppliers/view.ctp:46
+msgid "Part Level Code"
+msgstr "Code de niveau de pièce"
+
+#: Template/Cars/view.ctp:59 Template/Parts/view.ctp:48 Template/Suppliers/view.ctp:47
+msgid "Part Manufacturer Code"
+msgstr "Code du fabricant de la pièce"
+
+#: Template/Cars/view.ctp:60 Template/Parts/view.ctp:52 Template/Suppliers/view.ctp:48
+msgid "Part Type Code"
+msgstr "Code de type de pièce"
+
+#: Template/Cars/view.ctp:61 Template/Suppliers/view.ctp:49
+msgid "Supplier Id"
+msgstr "ID du fournisseur"
+
+#: Template/Cars/view.ctp:62 Template/Parts/view.ctp:32 Template/Suppliers/view.ctp:50
+msgid "Part Name"
+msgstr "Nom de la pièce"
+
+#: Template/Cars/view.ctp:63 Template/Parts/view.ctp:56 Template/Suppliers/view.ctp:51
+msgid "Weight"
+msgstr "Poids"
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr "Erreur"
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr "Arrière"
+
+#: Template/Parts/add.ctp:13 Template/Parts/edit.ctp:19 Template/Parts/index.ctp:13
+#: Template/Parts/view.ctp:16 Template/Suppliers/add.ctp:10 Template/Suppliers/edit.ctp:16
+#: Template/Suppliers/view.ctp:12
+msgid "List Suppliers"
+msgstr "Liste des fournisseurs"
+
+#: Template/Parts/add.ctp:14 Template/Parts/edit.ctp:20 Template/Parts/index.ctp:14
+#: Template/Parts/view.ctp:17 Template/Suppliers/index.ctp:10 Template/Suppliers/view.ctp:13
+msgid "New Supplier"
+msgstr "Nouveau fournisseur"
+
+#: Template/Parts/add.ctp:20
+msgid "Add Part"
+msgstr "Ajouter une pièce"
+
+#: Template/Parts/edit.ctp:26 Template/Parts/view.ctp:10
+msgid "Edit Part"
+msgstr "Modifier la pièce"
+
+#: Template/Parts/index.ctp:18
+msgid "Parts"
+msgstr "les pièces"
+
+#: Template/Parts/view.ctp:11
+msgid "Delete Part"
+msgstr "Supprimer la pièce"
+
+#: Template/Parts/view.ctp:24
+msgid "Car"
+msgstr "Voiture"
+
+#: Template/Parts/view.ctp:28
+msgid "Supplier"
+msgstr "Fournisseur"
+
+#: Template/RefPartManufacturers/add.ctp:10 Template/RefPartManufacturers/edit.ctp:16
+#: Template/RefPartManufacturers/view.ctp:12
+msgid "List Ref Part Manufacturers"
+msgstr "Liste des fabricants de pièces de référence"
+
+#: Template/RefPartManufacturers/add.ctp:16
+msgid "Add Ref Part Manufacturer"
+msgstr "Ajouter un fabricant de pièces de référence"
+
+#: Template/RefPartManufacturers/edit.ctp:22 Template/RefPartManufacturers/view.ctp:10
+msgid "Edit Ref Part Manufacturer"
+msgstr "Modifier le fabricant de la pièce de référence"
+
+#: Template/RefPartManufacturers/index.ctp:10 Template/RefPartManufacturers/view.ctp:13
+msgid "New Ref Part Manufacturer"
+msgstr "Nouveau fabricant de pièces de référence"
+
+#: Template/RefPartManufacturers/index.ctp:14
+msgid "Ref Part Manufacturers"
+msgstr "Fabricants de pièces de référence"
+
+#: Template/RefPartManufacturers/view.ctp:11
+msgid "Delete Ref Part Manufacturer"
+msgstr "Supprimer référence fabricant"
+
+#: Template/RefPartManufacturers/view.ctp:20
+msgid "Part Manufacturer Name"
+msgstr "Nom du fabricant de la pièce"
+
+#: Template/RefPartTypes/add.ctp:10 Template/RefPartTypes/edit.ctp:16 Template/RefPartTypes/view.ctp:12
+msgid "List Ref Part Types"
+msgstr "Liste des types de pièces de référence"
+
+#: Template/RefPartTypes/add.ctp:16
+msgid "Add Ref Part Type"
+msgstr "Ajouter un type de pièce de référence"
+
+#: Template/RefPartTypes/edit.ctp:22 Template/RefPartTypes/view.ctp:10
+msgid "Edit Ref Part Type"
+msgstr "Modifier le type de pièce de référence"
+
+#: Template/RefPartTypes/index.ctp:10 Template/RefPartTypes/view.ctp:13
+msgid "New Ref Part Type"
+msgstr "Nouveau type de pièce de référence"
+
+#: Template/RefPartTypes/index.ctp:14
+msgid "Ref Part Types"
+msgstr "Types de référence"
+
+#: Template/RefPartTypes/view.ctp:11
+msgid "Delete Ref Part Type"
+msgstr "Supprimer le type de pièce de référence"
+
+#: Template/RefPartTypes/view.ctp:20
+msgid "Part Type Description"
+msgstr "Description du type de pièce"
+
+#: Template/Suppliers/add.ctp:18
+msgid "Add Supplier"
+msgstr "Ajouter un fournisseur"
+
+#: Template/Suppliers/edit.ctp:24 Template/Suppliers/view.ctp:10
+msgid "Edit Supplier"
+msgstr "Modifier le fournisseur"
+
+#: Template/Suppliers/index.ctp:16
+msgid "Suppliers"
+msgstr "Fournisseurs"
+
+#: Template/Suppliers/view.ctp:11
+msgid "Delete Supplier"
+msgstr "Supprimer le fournisseur"
+
+#: Template/Suppliers/view.ctp:26
+msgid "Supplier Details"
+msgstr "Détails du fournisseur"
+
+#: Template/Users/add.ctp:10 Template/Users/edit.ctp:16 Template/Users/view.ctp:12
+msgid "List Users"
+msgstr "Liste des utilisateurs"
+
+#: Template/Users/add.ctp:16
+msgid "Add User"
+msgstr "Ajouter un utilisateur"
+
+#: Template/Users/edit.ctp:22 Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr "Modifier l'utilisateur"
+
+#: Template/Users/index.ctp:10 Template/Users/view.ctp:13
+msgid "New User"
+msgstr "Nouvel utilisateur"
+
+#: Template/Users/index.ctp:14
+msgid "Users"
+msgstr "Utilisateurs"
+
+#: Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr "Supprimer l'utilisateur"
+
+#: Template/Users/view.ctp:20
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: Template/Users/view.ctp:24
+msgid "Email"
+msgstr "Email"
+
+#: Template/Users/view.ctp:28
+msgid "Password"
+msgstr "Mot de passe"

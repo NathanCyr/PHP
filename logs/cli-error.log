@@ -38,3 +38,10 @@ Stack Trace:
 #15 {main}
 
 
+2018-10-10 17:42:16 Error: [RuntimeException] Unknown command `cake i1n`. Run `cake --help` to get the list of valid commands. in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 321
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(159): Cake\Console\CommandRunner->resolveName(Object(Cake\Console\CommandCollection), Object(Cake\Console\ConsoleIo), 'i1n')
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#2 {main}
+
+

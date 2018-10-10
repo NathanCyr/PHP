@@ -48,12 +48,16 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                         if ($loguser) { ?>
                             <li> <?php echo $this->Html->link($loguser['email'], ['controller' => 'Users', 'action' => 'view', $loguser['id']]); ?> </li>
                             <li> <?php echo $this->Html->link($loguser['role'], ['controller' => 'Users', 'action' => 'view', $loguser['id']]); ?> </li>
-                            <li> <?php echo $this->Html->link(' logout', ['controller' => 'Users', 'action' => 'logout']); ?> </li>
+                            <li> <?php echo $this->Html->link('logout', ['controller' => 'Users', 'action' => 'logout']); ?> </li>
                             <li> <?php echo $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]); ?> </li>
+                            <li> <?php echo $this->Html->link('Anglais', ['action' => 'changeLang', 'en_CA'], ['escape' => false]); ?> </li>
+                            <li> <?php echo $this->Html->link('Espagnol', ['action' => 'changeLang', 'es_CA'], ['escape' => false]); ?> </li>
                         <?php } else { ?>
                             <li> <?php echo $this->Html->link('login', ['controller' => 'Users', 'action' => 'login']);?> </li>
                             <li> <?php echo $this->Html->link('inscription', ['controller' => 'Users', 'action' => 'add']); ?> </li>
                             <li> <?php echo $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]); ?> </li>
+                            <li> <?php echo $this->Html->link('Anglais', ['action' => 'changeLang', 'en_CA'], ['escape' => false]); ?> </li>
+                            <li> <?php echo $this->Html->link('Espagnol', ['action' => 'changeLang', 'es_CA'], ['escape' => false]); ?> </li>
                        <?php } ?>
                         </li></li>
             
