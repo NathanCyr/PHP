@@ -45,3 +45,573 @@ Stack Trace:
 #2 {main}
 
 
+2018-10-12 00:52:08 Error: [PDOException] SQLSTATE[HY000] [14] unable to open database file in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Driver.php on line 92
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Driver.php(92): PDO->__construct('sqlite:C:\\Progr...', 'root', '', Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(70): Cake\Database\Driver->_connect('sqlite:C:\\Progr...', Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlite->connect()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Dialect\SqliteDialectTrait.php(165): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlite))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlite->schemaDialect()
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(391): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\MigrationSnapshotTask.php(109): Cake\Database\Connection->getSchemaCollection()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\MigrationSnapshotTask.php(41): Migrations\Shell\Task\MigrationSnapshotTask->getCollection(Object(Cake\Database\Connection))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\MigrationSnapshotTask->bake('Initial')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('Initial')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-10-12 01:01:12 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.cars__files' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('CarsFiles')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('CarsFiles')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('CarsFiles')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:05:26 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.i18_ns' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18N')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18N')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18N')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:11:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:14:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:15:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:15:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(251): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:31:17 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.i18ns' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:31:27 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.i18ns' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:31:34 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.i18ns' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:31:38 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.i18ns' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:31:44 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.i18_ns' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18N')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18N')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18N')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:32:49 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.i18ns' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:33:09 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carpartssuppliers.i18ns' doesn't exist in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php on line 39
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(350): Cake\Database\Statement\MysqlStatement->execute()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(353): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(302): Cake\Database\Connection->query(Object(Cake\Database\Query))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(306): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(111): Cake\Database\Connection->execute(Object(Cake\Database\Query))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(104): Migrations\Shell\Task\SeedTask->templateData()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\Task\SeedTask.php(130): Bake\Shell\Task\SimpleBakeTask->bake('I18n')
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\bake\src\Shell\Task\SimpleBakeTask.php(91): Migrations\Shell\Task\SeedTask->bake('I18n')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\SimpleBakeTask->main('I18n')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Cake\Console\Shell->runCommand(Array, true)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Bake\Shell\BakeShell), Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#16 {main}
+
+
+2018-10-12 01:35:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:35:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:35:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:35:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:40:24 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:45:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 01:47:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-3' for key 'PRIMARY' in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php on line 306
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(306): PDOStatement->execute(Array)
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\PdoAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\TimedOutputAdapter.php(127): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(193): Phinx\Db\Adapter\TimedOutputAdapter->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(653): Phinx\Db\Adapter\AdapterWrapper->bulkinsert(Object(Phinx\Db\Table\Table), Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(625): Phinx\Db\Table->saveData()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Table.php(683): Phinx\Db\Table->update()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\config\Seeds\CarsFilesSeed.php(37): Phinx\Db\Table->save()
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager\Environment.php(158): CarsFilesSeed->run()
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(417): Phinx\Migration\Manager\Environment->executeSeed(Object(CarsFilesSeed))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Migration\Manager.php(554): Phinx\Migration\Manager->executeSeed('default', Object(CarsFilesSeed))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\SeedRun.php(111): Phinx\Migration\Manager->seed('default')
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\SeedRun->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(72): Migrations\Command\Seed->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#24 {main}
+
+
+2018-10-12 02:04:56 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [14] unable to open database file in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\SQLiteAdapter.php on line 84
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(136): Phinx\Db\Adapter\SQLiteAdapter->connect()
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(469): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\CakeAdapter.php(56): Phinx\Db\Adapter\AdapterWrapper->getConnection()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\TimedOutputAdapter), Object(Cake\Database\Connection))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Console\Command\Migrate.php(74): Migrations\Command\Migrate->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(35): Phinx\Console\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Migrate.php(67): Migrations\Command\Migrate->parentExecute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Migrate->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Migrate), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'migrate')
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-10-12 02:05:03 Error: [InvalidArgumentException] There was a problem connecting to the database: SQLSTATE[HY000] [14] unable to open database file in C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\SQLiteAdapter.php on line 84
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\PdoAdapter.php(136): Phinx\Db\Adapter\SQLiteAdapter->connect()
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\robmorgan\phinx\src\Phinx\Db\Adapter\AdapterWrapper.php(469): Phinx\Db\Adapter\PdoAdapter->getConnection()
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\CakeAdapter.php(56): Phinx\Db\Adapter\AdapterWrapper->getConnection()
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\CommandTrait.php(78): Migrations\CakeAdapter->__construct(Object(Phinx\Db\Adapter\TimedOutputAdapter), Object(Cake\Database\Connection))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Command\Seed.php(70): Migrations\Command\Seed->bootstrap(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Command\Command.php(255): Migrations\Command\Seed->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(886): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(262): Symfony\Component\Console\Application->doRunCommand(Object(Migrations\Command\Seed), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\symfony\console\Application.php(145): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(108): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\Shell.php(532): Migrations\Shell\MigrationsShell->main('migrations', 'seed')
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\migrations\src\Shell\MigrationsShell.php(164): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(342): Migrations\Shell\MigrationsShell->runCommand(Array, true)
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Console\CommandRunner.php(164): Cake\Console\CommandRunner->runShell(Object(Migrations\Shell\MigrationsShell), Array)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+

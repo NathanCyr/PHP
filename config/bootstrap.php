@@ -43,6 +43,7 @@ use Cake\Log\Log;
 use Cake\Mailer\Email;
 use Cake\Utility\Inflector;
 use Cake\Utility\Security;
+Plugin::load('Migrations');
 
 /**
  * Uncomment block of code below if you want to use `.env` file during development.
