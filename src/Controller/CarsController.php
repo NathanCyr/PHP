@@ -20,6 +20,7 @@ class CarsController extends AppController
      */
     public function index()
     {
+        
         $cars = $this->paginate($this->Cars);
 
         $this->set(compact('cars'));
