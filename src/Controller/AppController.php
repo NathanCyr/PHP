@@ -65,7 +65,7 @@ class AppController extends Controller
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        $this->Auth->allow(['display', 'view', 'index', 'changelang']);
+        $this->Auth->allow(['display', 'view', 'index', 'changelang', 'aPropos']);
     }
 
     
@@ -81,7 +81,7 @@ public function isAuthorized($user)
         if($user['role']=='super'){
             return true;
         }
-    }else if(in_array($action['view'])){
+    }else if(in_array($action,['view', 'aPropos'])){
         if($user['role']=='user'){
             return true;
         }

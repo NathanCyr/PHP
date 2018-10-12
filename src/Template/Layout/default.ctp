@@ -53,12 +53,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                             <li> <?php echo $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]); ?> </li>
                             <li> <?php echo $this->Html->link('Anglais', ['action' => 'changeLang', 'en_CA'], ['escape' => false]); ?> </li>
                             <li> <?php echo $this->Html->link('Espagnol', ['action' => 'changeLang', 'es_CA'], ['escape' => false]); ?> </li>
+                            <li> <?= $this->Html->link('A propos', ['controller' => 'Users', 'action' => 'aPropos']); ?> </li>
                         <?php } else { ?>
                             <li> <?php echo $this->Html->link('login', ['controller' => 'Users', 'action' => 'login']);?> </li>
                             <li> <?php echo $this->Html->link('inscription', ['controller' => 'Users', 'action' => 'add']); ?> </li>
                             <li> <?php echo $this->Html->link('Français', ['action' => 'changeLang', 'fr_CA'], ['escape' => false]); ?> </li>
                             <li> <?php echo $this->Html->link('Anglais', ['action' => 'changeLang', 'en_CA'], ['escape' => false]); ?> </li>
                             <li> <?php echo $this->Html->link('Espagnol', ['action' => 'changeLang', 'es_CA'], ['escape' => false]); ?> </li>
+                            <li> <?= $this->Html->link('A propos', ['controller' => 'Users', 'action' => 'aPropos']); ?> </li>
                        <?php } ?>
                         </li></li>
             

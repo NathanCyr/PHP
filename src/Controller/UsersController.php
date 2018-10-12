@@ -130,4 +130,8 @@ public function logout()
 
         return $this->redirect(['action' => 'index']);
     }
+
+    public function aPropos(){
+        
+    }
 }
