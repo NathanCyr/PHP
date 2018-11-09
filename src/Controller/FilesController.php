@@ -71,6 +71,8 @@ class FilesController extends AppController
             }
         }
         $this->set(compact('file'));
+
+
     }
 
     /**

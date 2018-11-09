@@ -76,6 +76,7 @@ class ComposerStaticInit839157af1f7ff49b510b4267407c1913
         array (
             'JsonSchema\\' => 11,
             'Jasny\\Twig\\' => 11,
+            'JakubOnderka\\PhpConsoleHighlighter\\' => 35,
             'JakubOnderka\\PhpConsoleColor\\' => 29,
         ),
         'D' => 
@@ -210,6 +211,10 @@ class ComposerStaticInit839157af1f7ff49b510b4267407c1913
         array (
             0 => __DIR__ . '/..' . '/jasny/twig-extensions/src',
         ),
+        'JakubOnderka\\PhpConsoleHighlighter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src',
+        ),
         'JakubOnderka\\PhpConsoleColor\\' => 
         array (
             0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
@@ -309,13 +314,6 @@ class ComposerStaticInit839157af1f7ff49b510b4267407c1913
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
-            ),
-        ),
-        'J' => 
-        array (
-            'JakubOnderka\\PhpConsoleHighlighter' => 
-            array (
-                0 => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src',
             ),
         ),
         'D' => 
