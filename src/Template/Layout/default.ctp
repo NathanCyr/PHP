@@ -24,6 +24,7 @@ echo $this->Html->script([
     "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
     "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 ]);
+
 ?>
 
 
@@ -81,10 +82,13 @@ echo $this->Html->script([
         </div>
     </nav>
     <?= $this->Flash->render() ?>
-    <div class="container clearfix">
-        <?= $this->fetch('content') ?>
-    </div>
-    <footer>
-    </footer>
-</body>
+        <div class="container clearfix">
+            <?= $this->fetch('content') ?>
+        </div>
+        <footer>
+        </footer>
+		<?= $this->fetch('scriptLibraries') ?>
+        <?= $this->fetch('script'); ?>
+        <?= $this->fetch('scriptBottom') ?>   
+    </body>
 </html>
