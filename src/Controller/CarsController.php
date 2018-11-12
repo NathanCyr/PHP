@@ -13,107 +13,14 @@ use App\Controller\AppController;
 class CarsController extends AppController
 {
 
-    /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|void
-     */
-    public function index()
-    {
-        
-        $this->paginate = [
-            'countain' => ['Users']
-        ];
-
-        $cars = $this->paginate($this->Cars);
-
-        $this->set(compact('cars'));
-    }
-
-
-    /**
-     * View method
-     *
-     * @param string|null $id Car id.
-     * @return \Cake\Http\Response|void
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-    public function view($id = null)
-    {
-        $car = $this->Cars->get($id, [
-            'contain' => ['Parts']
-        ]);
-
-        $this->set('car', $car);
-    }
-
-    /**
-     * Add method
-     *
-     * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
-     */
-    public function add()
-    {
-        $car = $this->Cars->newEntity();
-        if ($this->request->is('post')) {
-            $car = $this->Cars->patchEntity($car, $this->request->getData());
-            $car->user_id = $this->Auth->user('id');
-            if ($this->Cars->save($car)) {
-               $this->Flash->success(__('The car has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The car could not be saved. Please, try again.'));
-        }
-
-        $files = $this->Cars->files->find('list', ['limit' => 200]);
-        $this->set(compact('car', 'users', 'files'));
-    }
-
-    /**
-     * Edit method
-     *
-     * @param string|null $id Car id.
-     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
-    public function edit($id = null)
-    {
-        $car = $this->Cars->get($id, [
-            'contain' => ['files']
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $car = $this->Cars->patchEntity($car, $this->request->getData());
-            if ($this->Cars->save($car)) {
-                $this->Flash->success(__('The car has been saved.'));
-
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The car could not be saved. Please, try again.'));
-        }
-        $files = $this->Cars->files->find('list',['limit' => 200]);
-        $this->set(compact('car', 'users', 'files'));
-    }
-
-    /**
-     * Delete method
-     *
-     * @param string|null $id Car id.
-     * @return \Cake\Http\Response|null Redirects to index.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-    public function delete($id = null)
-    {
-        $this->request->allowMethod(['post', 'delete']);
-        $car = $this->Cars->get($id);
-        if ($this->Cars->delete($car)) {
-            $this->Flash->success(__('The car has been deleted.'));
-        } else {
-            $this->Flash->error(__('The car could not be deleted. Please, try again.'));
-        }
-
-        return $this->redirect(['action' => 'index']);
-    }
+    public $paginate = [
+        'page' => 1,
+        'limit' => 10,
+        'maxLimit' => 100,
+        'sortWhitelist' => [
+            'id', 'model', 'created', 'modified'
+        ]
+    ];
 
     
 

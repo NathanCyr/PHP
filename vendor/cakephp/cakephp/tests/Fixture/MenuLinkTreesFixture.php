@@ -56,7 +56,7 @@ class MenuLinkTreesFixture extends TestFixture
      *
      * ***
      *
-     * # categories:
+     * # cars:
      *
      *  - electronics:9
      *      - televisions:10
@@ -137,7 +137,7 @@ class MenuLinkTreesFixture extends TestFixture
             'title' => 'Link 8',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '1',
             'rght' => '10',
             'parent_id' => null,
@@ -145,75 +145,75 @@ class MenuLinkTreesFixture extends TestFixture
             'title' => 'electronics',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '2',
             'rght' => '9',
             'parent_id' => '9',
-            'url' => '/category/televisions.html',
+            'url' => '/car/televisions.html',
             'title' => 'televisions',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '3',
             'rght' => '4',
             'parent_id' => '10',
-            'url' => '/category/tube.html',
+            'url' => '/car/tube.html',
             'title' => 'tube',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '5',
             'rght' => '8',
             'parent_id' => '10',
-            'url' => '/category/lcd.html',
+            'url' => '/car/lcd.html',
             'title' => 'lcd',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '6',
             'rght' => '7',
             'parent_id' => '12',
-            'url' => '/category/plasma.html',
+            'url' => '/car/plasma.html',
             'title' => 'plasma',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '11',
             'rght' => '20',
             'parent_id' => null,
-            'url' => '/category/portable.html',
+            'url' => '/car/portable.html',
             'title' => 'portable',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '12',
             'rght' => '15',
             'parent_id' => '14',
-            'url' => '/category/mp3.html',
+            'url' => '/car/mp3.html',
             'title' => 'mp3',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '13',
             'rght' => '14',
             'parent_id' => '15',
-            'url' => '/category/flash.html',
+            'url' => '/car/flash.html',
             'title' => 'flash',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '16',
             'rght' => '17',
             'parent_id' => '14',
-            'url' => '/category/cd.html',
+            'url' => '/car/cd.html',
             'title' => 'cd',
         ],
         [
-            'menu' => 'categories',
+            'menu' => 'cars',
             'lft' => '18',
             'rght' => '19',
             'parent_id' => '14',
-            'url' => '/category/radios.html',
+            'url' => '/car/radios.html',
             'title' => 'radios',
         ],
     ];

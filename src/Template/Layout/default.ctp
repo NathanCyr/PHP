@@ -15,6 +15,15 @@
  */
 
 $cakeDescription = 'CakePHP: the rapid development php framework';
+
+echo $this->Html->css(["https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
+    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
+    "Cars/basic.css"]);
+echo $this->Html->script([
+    "https://code.jquery.com/jquery-3.3.1.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+]);
 ?>
 
 
