@@ -21,6 +21,10 @@ class CarsController extends AppController
     public function index()
     {
         
+        $this->paginate = [
+            'countain' => ['Users']
+        ];
+
         $cars = $this->paginate($this->Cars);
 
         $this->set(compact('cars'));
@@ -61,7 +65,8 @@ class CarsController extends AppController
             }
             $this->Flash->error(__('The car could not be saved. Please, try again.'));
         }
-        $this->set(compact('car'));
+        $files = $this->Cars->files->find('list', ['limit' => 200]);
+        $this->set(compact('car', 'users', 'files'));
     }
 
     /**
@@ -74,7 +79,7 @@ class CarsController extends AppController
     public function edit($id = null)
     {
         $car = $this->Cars->get($id, [
-            'contain' => []
+            'contain' => ['files']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $car = $this->Cars->patchEntity($car, $this->request->getData());
@@ -85,7 +90,8 @@ class CarsController extends AppController
             }
             $this->Flash->error(__('The car could not be saved. Please, try again.'));
         }
-        $this->set('car', $car);
+        $files = $this->Cars->files->find('list',['limit' => 200]);
+        $this->set(compact('car', 'users', 'files'));
     }
 
     /**
