@@ -615,3 +615,88 @@ Stack Trace:
 #15 {main}
 
 
+2018-11-12 15:39:16 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\CarsControllerTest" test case. SQLSTATE[HY000] [1045] Access denied for user 'my_app'@'localhost' (using password: YES) in C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 356
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(98): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#10 {main}
+
+
+2018-11-12 16:08:42 Error: [Cake\Datasource\Exception\MissingDatasourceException] Datasource class test could not be found.  in C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php on line 58
+Exception Attributes: array (
+  'class' => 'test',
+  'plugin' => NULL,
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(95): Cake\Datasource\ConnectionRegistry->_throwMissingClassError('test', NULL)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php(205): Cake\Core\ObjectRegistry->load('test', Array)
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php(182): Cake\Datasource\ConnectionManager::get('test')
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php(145): Cake\TestSuite\Fixture\TestFixture->_schemaFromFields()
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\tests\Fixture\CarsFixture.php(59): Cake\TestSuite\Fixture\TestFixture->init()
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php(113): App\Test\Fixture\CarsFixture->init()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(219): Cake\TestSuite\Fixture\TestFixture->__construct()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#18 {main}
+
+
+2018-11-12 16:09:14 Error: [Cake\Datasource\Exception\MissingDatasourceException] Datasource class test could not be found.  in C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php on line 58
+Exception Attributes: array (
+  'class' => 'test',
+  'plugin' => NULL,
+)
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(95): Cake\Datasource\ConnectionRegistry->_throwMissingClassError('test', NULL)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php(205): Cake\Core\ObjectRegistry->load('test', Array)
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php(182): Cake\Datasource\ConnectionManager::get('test')
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php(145): Cake\TestSuite\Fixture\TestFixture->_schemaFromFields()
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\tests\Fixture\CarsFixture.php(59): Cake\TestSuite\Fixture\TestFixture->init()
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php(113): App\Test\Fixture\CarsFixture->init()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(219): Cake\TestSuite\Fixture\TestFixture->__construct()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#18 {main}
+
+
+2018-11-12 16:10:36 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\CarsFilesFixture" not found. Fixture "app.cars_files" was referenced in test case "App\Test\TestCase\Controller\FilesControllerTest". in C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 228
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(103): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\FilesControllerTest))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+

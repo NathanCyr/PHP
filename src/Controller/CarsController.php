@@ -65,6 +65,7 @@ class CarsController extends AppController
             }
             $this->Flash->error(__('The car could not be saved. Please, try again.'));
         }
+
         $files = $this->Cars->files->find('list', ['limit' => 200]);
         $this->set(compact('car', 'users', 'files'));
     }
