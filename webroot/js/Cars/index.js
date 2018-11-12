@@ -67,6 +67,7 @@ function carAction(type, id) {
                 getCars();
                 $('.form')[0].reset();
                 $('.formData').slideUp();
+                window.location.reload(true); 
             } else {
                 alert('Some problem occurred, please try again.');
             }

@@ -1,4 +1,4 @@
-?php
+<?php
 /**
 * @var \App\View\AppView $this
 * @var \App\Model\Entity\Car[]|\Cake\Collection\CollectionInterface $cars
@@ -23,7 +23,7 @@
         <thead>
         <tr>
             <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-            <th scope="col"><?= $this->Paginator->sort('Model') ?></th>
+            <th scope="col"><?= $this->Paginator->sort('Name') ?></th>
             <th scope="col"><?= $this->Paginator->sort('created') ?></th>
             <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
             <th scope="col" class="actions"><?= __('Actions') ?></th>
