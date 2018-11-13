@@ -31,7 +31,6 @@
             echo $this->Form->control('car_year_of_manufacture');
             echo $this->Form->control('model');
             echo $this->Form->control('other_car_details');
-            echo $this->Form->control('files._ids', ['options' => $_FILES]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

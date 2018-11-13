@@ -47,8 +47,8 @@ class CarsFixture extends TestFixture
                 'id' => 1,
                 'car_manufacturer_code' => 1,
                 'car_year_of_manufacture' => 1,
-                'model' => 'Lorem ipsum dolor sit amet',
-                'other_car_details' => 'Lorem ipsum dolor sit amet',
+                'model' => 'Premier test',
+                'other_car_details' => '',
                 'created' => '2018-11-13 20:13:09',
                 'modified' => '2018-11-13 20:13:09'
             ],

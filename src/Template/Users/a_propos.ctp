@@ -38,7 +38,7 @@
 	<p>Tous les droits</p>
 
 <h3>Code Coverage</h3>
-<a href="http://localhost/Cyr_Nathan_TP1/webroot/coverage/index.html">Cliquez ici</a>
+<a href="http://localhost/CyrNathan_TP1/webroot/coverage/index.html">Cliquez ici</a>
 
 <h3>Diagramme BD original</h3>
 <?php echo $this->Html->image('bdOriginal.png', ['alt' => 'Base de donnée du site original']); ?>

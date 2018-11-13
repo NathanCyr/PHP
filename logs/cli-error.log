@@ -4891,3 +4891,159 @@ Stack Trace:
 #9 {main}
 
 
+2018-11-13 22:25:41 Error: [Cake\Http\Exception\NotFoundException] Not found
+Request URL: /cars/view/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Traits\FindMethodTrait.php(71): Crud\Action\ViewAction->_notFound('6', Object(Crud\Event\Subject))
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Action\ViewAction.php(55): Crud\Action\ViewAction->_findRecord('6', Object(Crud\Event\Subject))
+#2 [internal function]: Crud\Action\ViewAction->_handle('6')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Action\BaseAction.php(71): call_user_func_array(Array, Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(163): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(503): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(383): Cake\TestSuite\IntegrationTestCase->_sendRequest('/cars/view/6', 'GET')
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\tests\TestCase\Controller\CarsControllerTest.php(52): Cake\TestSuite\IntegrationTestCase->get('/cars/view/6')
+#22 [internal function]: App\Test\TestCase\Controller\CarsControllerTest->testView()
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\CarsControllerTest), Array)
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#33 {main}
+
+
+2018-11-13 22:31:36 Error: [Cake\Http\Exception\NotFoundException] Not found
+Request URL: /cars/view/6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Traits\FindMethodTrait.php(71): Crud\Action\ViewAction->_notFound('6', Object(Crud\Event\Subject))
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Action\ViewAction.php(55): Crud\Action\ViewAction->_findRecord('6', Object(Crud\Event\Subject))
+#2 [internal function]: Crud\Action\ViewAction->_handle('6')
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Action\BaseAction.php(71): call_user_func_array(Array, Array)
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(163): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(503): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(383): Cake\TestSuite\IntegrationTestCase->_sendRequest('/cars/view/6', 'GET')
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\tests\TestCase\Controller\CarsControllerTest.php(52): Cake\TestSuite\IntegrationTestCase->get('/cars/view/6')
+#22 [internal function]: App\Test\TestCase\Controller\CarsControllerTest->testView()
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\CarsControllerTest), Array)
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#27 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#28 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#29 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#30 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#31 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#32 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#33 {main}
+
+
+2018-11-13 23:18:05 Error: [Cake\Controller\Exception\MissingActionException] Action CarsController::edit1() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CarsController',
+  'action' => 'edit1',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /cars/edit1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(163): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(503): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(400): Cake\TestSuite\IntegrationTestCase->_sendRequest('/cars/edit1', 'POST', Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\tests\TestCase\Controller\CarsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->post('/cars/edit1', Array)
+#16 [internal function]: App\Test\TestCase\Controller\CarsControllerTest->testEdit()
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\CarsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#27 {main}
+
+
+2018-11-13 23:38:57 Error: [Cake\Controller\Exception\MissingActionException] Action CarsController::edit1() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CarsController',
+  'action' => 'edit1',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /cars/edit1
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(163): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(503): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(400): Cake\TestSuite\IntegrationTestCase->_sendRequest('/cars/edit1', 'POST', Array)
+#15 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\tests\TestCase\Controller\CarsControllerTest.php(87): Cake\TestSuite\IntegrationTestCase->post('/cars/edit1', Array)
+#16 [internal function]: App\Test\TestCase\Controller\CarsControllerTest->testEdit()
+#17 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\CarsControllerTest), Array)
+#18 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\CarsControllerTest))
+#21 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(545): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#24 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#25 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#26 C:\Program Files (x86)\Ampps\www\CyrNathan_TP1\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#27 {main}
+
+
