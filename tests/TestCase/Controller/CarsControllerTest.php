@@ -3,6 +3,7 @@ namespace App\Test\TestCase\Controller;
 
 use App\Controller\CarsController;
 use Cake\TestSuite\IntegrationTestCase;
+use Cake\ORM\TableRegistry;
 
 /**
  * App\Controller\CarsController Test Case
@@ -17,56 +18,32 @@ class CarsControllerTest extends IntegrationTestCase
      */
     public $fixtures = [
         'app.cars',
-        'app.parts'
+        'app.parts',
+        'app.users'
     ];
+    public function setUp()
+    {
+        parent::setUp();
+        $this->Cars = TableRegistry::get('Cars');
+        $UsersTable = TableRegistry::get('users');
+        $user = $UsersTable->find('all', ['conditions' => ['users.role' => 'admin']])->first()->toArray();
+        $this->AuthAdmin = [
+            'Auth' => [
+                'User' => $user
+            ]
+        ];
+    }
+	
+	public function tearDown()
+    {
+        unset($this->AuthAdmin);
+        parent::tearDown();
+    }
 
-    /**
-     * Test index method
-     *
-     * @return void
-     */
     public function testIndex()
     {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test view method
-     *
-     * @return void
-     */
-    public function testView()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test add method
-     *
-     * @return void
-     */
-    public function testAdd()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test edit method
-     *
-     * @return void
-     */
-    public function testEdit()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test delete method
-     *
-     * @return void
-     */
-    public function testDelete()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->session($this->AuthAdmin);
+        $this->get('/cars');
+        $this->assertResponseOk();
     }
 }

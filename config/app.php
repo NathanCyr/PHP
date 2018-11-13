@@ -300,6 +300,12 @@ return [
             'username' => 'root',
             'password' => '',
             'database' => ROOT . DS . 'sqlite' . DS . 'test.sqlite',
+            'timezone' => 'UTC',
+            'cacheMetadata' => true,
+            'quoteIdentifiers' => false,
+            'log' => false,
+            //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
+            'url' => env('DATABASE_TEST_URL', null),
         ],
     ],
 

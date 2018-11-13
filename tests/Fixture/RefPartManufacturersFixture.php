@@ -17,16 +17,12 @@ class RefPartManufacturersFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
-        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'part_manufacturer_name' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8_unicode_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
-        'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
-        'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'autoIncrement' => true, 'precision' => null, 'comment' => null],
+        'part_manufacturer_name' => ['type' => 'string', 'length' => 765, 'null' => false, 'default' => null, 'precision' => null, 'comment' => null, 'fixed' => null, 'collate' => null],
+        'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'precision' => null, 'comment' => null],
+        'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'precision' => null, 'comment' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-        ],
-        '_options' => [
-            'engine' => 'InnoDB',
-            'collation' => 'utf8_unicode_ci'
         ],
     ];
     // @codingStandardsIgnoreEnd
@@ -42,8 +38,8 @@ class RefPartManufacturersFixture extends TestFixture
             [
                 'id' => 1,
                 'part_manufacturer_name' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-09-17 16:36:42',
-                'modified' => '2018-09-17 16:36:42'
+                'created' => '2018-11-13 20:13:18',
+                'modified' => '2018-11-13 20:13:18'
             ],
         ];
         parent::init();

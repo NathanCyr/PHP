@@ -1,13 +1,13 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
-use App\Controller\FilesController;
+use App\Controller\AppController;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
- * App\Controller\FilesController Test Case
+ * App\Controller\AppController Test Case
  */
-class FilesControllerTest extends IntegrationTestCase
+class AppControllerTest extends IntegrationTestCase
 {
 
     /**
@@ -16,56 +16,65 @@ class FilesControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.files',
-        'app.cars'
+        
     ];
 
     /**
-     * Test index method
+     * Test initialize method
      *
      * @return void
      */
-    public function testIndex()
+    public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
-     * Test view method
+     * Test isAuthorized method
      *
      * @return void
      */
-    public function testView()
+    public function testIsAuthorized()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
-     * Test add method
+     * Test changeLang method
      *
      * @return void
      */
-    public function testAdd()
+    public function testChangeLang()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
-     * Test edit method
+     * Test getName method
      *
      * @return void
      */
-    public function testEdit()
+    public function testGetName()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
     /**
-     * Test delete method
+     * Test invokeAction method
      *
      * @return void
      */
-    public function testDelete()
+    public function testInvokeAction()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test isAction method
+     *
+     * @return void
+     */
+    public function testIsAction()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
