@@ -50,7 +50,6 @@ and open the template in the editor.
             echo $this->Form->control('car_year_of_manufacture');
             echo $this->Form->control('model');
             echo $this->Form->control('other_car_details');
-            echo $this->Form->control('files._ids', ['options' => $files]);
         ?>
                     <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
                     <a href="javascript:void(0);" class="btn btn-success" onclick="carAction('add')">Add Car</a>
@@ -64,7 +63,6 @@ and open the template in the editor.
             echo $this->Form->control('car_year_of_manufacture');
             echo $this->Form->control('model');
             echo $this->Form->control('other_car_details');
-            echo $this->Form->control('files._ids', ['options' => $files]);
         ?>
                     <input type="hidden" class="form-control" name="id" id="idEdit"/>
                     <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>

@@ -39,3 +39,1449 @@ Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 150
 
 
 
+2018-11-13 13:48:28 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:28 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:29 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 53]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 53
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:29 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 67]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:29 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:29 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 53]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 53
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 67]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testDisplay() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /pages/home
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testDisplay() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMissingTemplate() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /pages/not_existing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMissingTemplate() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMissingTemplateInDebug() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /pages/not_existing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMissingTemplateInDebug() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testDirectoryTraversalProtection() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 93
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:48:30 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /pages/../Layout/ajax
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testDirectoryTraversalProtection() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 93
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:21 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:21 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 53]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 53
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 67]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 53]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 53
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 67]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testDisplay() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /pages/home
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testDisplay() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 50
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMissingTemplate() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /pages/not_existing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMissingTemplate() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 64
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMissingTemplateInDebug() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /pages/not_existing
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMissingTemplateInDebug() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 78
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\config\routes.php, line: 52
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Routing\RouteBuilder::extensions() - CORE\src\Routing\RouteBuilder.php, line 202
+Cake\Routing\Router::{closure}() - ROOT\config\routes.php, line 52
+Cake\Routing\RouteBuilder::scope() - CORE\src\Routing\RouteBuilder.php, line 1008
+Cake\Routing\Router::scope() - CORE\src\Routing\Router.php, line 1046
+Cake\Routing\Router::prefix() - CORE\src\Routing\Router.php, line 1088
+include - ROOT\config\routes.php, line 54
+Cake\Routing\Router::_loadRoutes() - CORE\src\Routing\Router.php, line 1170
+Cake\Routing\Router::url() - CORE\src\Routing\Router.php, line 610
+Cake\TestSuite\MiddlewareDispatcher::resolveUrl() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 111
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 499
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testDirectoryTraversalProtection() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 93
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:50:22 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\AppController.php, line: 58
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 310]
+Request URL: /pages/../Layout/ajax
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 310
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 563
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 58
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 272
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Http\ControllerFactory::create() - CORE\src\Http\ControllerFactory.php, line 47
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 91
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testDirectoryTraversalProtection() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 93
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:52:01 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 53]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 53
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:52:01 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 67]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:52:01 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 53]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 53
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:52:01 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 67]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:52:57 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 53]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 53
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:52:57 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 67]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 37
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:52:57 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 53]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 53
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-11-13 13:52:57 Notice: Notice (8): Undefined variable: files in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Template\Cars\index.ctp, line 67]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+include - APP/Template\Cars\index.ctp, line 67
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 1240
+Cake\View\View::_render() - CORE\src\View\View.php, line 1201
+Cake\View\View::render() - CORE\src\View\View.php, line 803
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 790
+Crud\Controller\Component\CrudComponent::execute() - ROOT\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php, line 262
+App\Controller\AppController::invokeAction() - ROOT\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php, line 68
+Cake\Http\ActionDispatcher::_invoke() - CORE\src\Http\ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE\src\Http\ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE\src\Http\BaseApplication.php, line 235
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE\src\Routing\Middleware\RoutingMiddleware.php, line 156
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE\src\Routing\Middleware\AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE\src\Error\Middleware\ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE\src\Http\Runner.php, line 65
+Cake\Http\Runner::run() - CORE\src\Http\Runner.php, line 51
+Cake\Http\Server::run() - CORE\src\Http\Server.php, line 98
+Cake\TestSuite\MiddlewareDispatcher::execute() - CORE\src\TestSuite\MiddlewareDispatcher.php, line 163
+Cake\TestSuite\IntegrationTestCase::_sendRequest() - CORE\src\TestSuite\IntegrationTestCase.php, line 503
+Cake\TestSuite\IntegrationTestCase::get() - CORE\src\TestSuite\IntegrationTestCase.php, line 383
+App\Test\TestCase\Controller\PagesControllerTest::testMultipleGet() - ROOT\tests\TestCase\Controller\PagesControllerTest.php, line 39
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit\Framework\TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 1071
+PHPUnit\Framework\TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 939
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 698
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 545
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+

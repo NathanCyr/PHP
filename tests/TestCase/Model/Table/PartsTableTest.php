@@ -26,7 +26,6 @@ class PartsTableTest extends TestCase
     public $fixtures = [
         'app.parts',
         'app.cars',
-        'app.parent_parts',
         'app.suppliers'
     ];
 
