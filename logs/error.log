@@ -6094,3 +6094,110 @@ Stack Trace:
 #19 {main}
 
 
+2018-11-13 15:45:39 Error: Fatal Error (1): Class 'BootsrapUI\View\UIView' not found in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\View\AppView.php, line 25]
+Request URL: /users
+Referer URL: http://localhost/Cyr_Nathan_TP1/users
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 229
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 15:45:39 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\View\AppView.php line=25 in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 48]
+Request URL: /users
+Referer URL: http://localhost/Cyr_Nathan_TP1/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 48
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 15:45:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\View\AppView.php:25) in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 148]
+Request URL: /users
+Referer URL: http://localhost/Cyr_Nathan_TP1/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 148
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 54
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 15:45:39 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\View\AppView.php:25) in [C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 181]
+Request URL: /users
+Referer URL: http://localhost/Cyr_Nathan_TP1/users
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 181
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 55
+Cake\Error\ErrorHandler::_sendResponse() - CORE\src\Error\ErrorHandler.php, line 198
+Cake\Error\ErrorHandler::_displayException() - CORE\src\Error\ErrorHandler.php, line 139
+Cake\Error\BaseErrorHandler::handleException() - CORE\src\Error\BaseErrorHandler.php, line 193
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 231
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 109
+[main] - [internal], line ??
+
+
+
+2018-11-13 15:45:39 Error: [Cake\Error\FatalErrorException] Class 'BootsrapUI\View\UIView' not found in C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\View\AppView.php on line 25
+Request URL: /users
+Referer URL: http://localhost/Cyr_Nathan_TP1/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(109): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Bootsrap...', 'C:\\Program File...', 25)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-11-13 15:56:54 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts
+Referer URL: http://localhost/Cyr_Nathan_TP1/users
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(680): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(524): Cake\ORM\Table->getPrimaryKey()
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(479): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\PartsTable), Object(Cake\Database\TypeMap), Array)
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(840): Cake\ORM\Query->contain(Array)
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2409): Cake\ORM\Query->applyOptions(Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1360): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\PartsTable), Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\PartsTable), Array)
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\PartsTable))
+#12 [internal function]: App\Controller\PartsController->index()
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
