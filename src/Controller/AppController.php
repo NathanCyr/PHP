@@ -28,6 +28,20 @@ use Cake\I18n\I18n;
  */
 class AppController extends Controller
 {
+    use \Crud\Controller\ControllerTrait;
+
+    public $components = [
+        'RequestHandler',
+        'Crud.Crud' => [
+            'actions' => [
+                'Crud.Index',
+                'Crud.View',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.Delete'
+            ],
+        ]
+    ];
 
     /**
      * Initialization hook method.
@@ -59,42 +73,42 @@ class AppController extends Controller
                 'controller' => 'Users',
                 'action' => 'login'
             ],
-             // Si pas autorisé, on renvoit sur la page précédente
+            // Si pas autorisé, on renvoit sur la page précédente
             'unauthorizedRedirect' => $this->referer()
         ]);
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        $this->Auth->allow(['display', 'view', 'index', 'changelang', 'aPropos']);
+        $this->Auth->allow(['display', 'view', 'index', 'changelang', 'aPropos','carAction']);
     }
 
-    
 
-public function isAuthorized($user)
-{
-    $action = $this->request->getParam('action');
-    if(in_array($action,['add', 'edit', 'delete'])){
-        if($user['role']=='admin'){
-            return true;
+
+    public function isAuthorized($user)
+    {
+        $action = $this->request->getParam('action');
+        if(in_array($action,['add', 'edit', 'delete'])){
+            if($user['role']=='admin'){
+                return true;
+            }
+        }else if(in_array($action,['edit', 'delete'])){
+            if($user['role']=='super'){
+                return true;
+            }
+        }else if(in_array($action,['view', 'aPropos'])){
+            if($user['role']=='user'){
+                return true;
+            }
+        }else{
+            return false;
         }
-    }else if(in_array($action,['edit', 'delete'])){
-        if($user['role']=='super'){
-            return true;
-        }
-    }else if(in_array($action,['view', 'aPropos'])){
-        if($user['role']=='user'){
-            return true;
-        }
-    }else{
-        return false;
+
     }
-    
-}
 
-public function changeLang($lang = 'en_US') {
-    I18n::setLocale($lang);
-    $this->request->session()->write('Config.language', $lang);
-    return $this->redirect($this->request->referer());
-}
+    public function changeLang($lang = 'en_US') {
+        I18n::setLocale($lang);
+        $this->request->session()->write('Config.language', $lang);
+        return $this->redirect($this->request->referer());
+    }
 
 }

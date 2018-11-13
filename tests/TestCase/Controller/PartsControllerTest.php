@@ -18,7 +18,6 @@ class PartsControllerTest extends IntegrationTestCase
     public $fixtures = [
         'app.parts',
         'app.cars',
-        'app.parent_parts',
         'app.suppliers'
     ];
 

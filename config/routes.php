@@ -23,6 +23,8 @@ use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
+Router::extensions(['json', 'xml', 'pdf']);
+Router::prefix('Admin', function ($routes) { $routes->fallbacks('InflectedRoute'); });
 /**
  * The default class to use for all routes
  *
@@ -45,6 +47,11 @@ use Cake\Routing\Route\DashedRoute;
  *
  */
 Router::defaultRouteClass(DashedRoute::class);
+
+Router::prefix('api', function ($routes) {
+    $routes->extensions(['json', 'xml']);
+    $routes->resources('Cars');
+});
 
 Router::scope('/', function (RouteBuilder $routes) {
     /**
