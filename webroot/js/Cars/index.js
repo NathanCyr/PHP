@@ -83,8 +83,10 @@ function editCar(id) {
         url: urlToRestApi+ "/" + id,
         success: function (data) {
             $('#idEdit').val(data.data.id);
-            $('#nameEdit').val(data.data.name);
-            $('#descriptionEdit').val(data.data.description);
+            $('#car_manufacturer_codeEdit').val(data.data.car_manufacturer_code);
+            $('#car_year_of_manufactureEdit').val(data.data.car_year_of_manufacture);
+            $('#modelEdit').val(data.data.model);
+            $('#other_car_detailsEdit').val(data.data.other_car_details);
             $('#editForm').slideDown();
         }
     });

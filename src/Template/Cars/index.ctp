@@ -61,10 +61,10 @@ and open the template in the editor.
                 <h2 id="actionLabel">Edit Car</h2>
                 <form class="form" id="carForm">
                 <?php
-            echo $this->Form->control('car_manufacturer_code');
-            echo $this->Form->control('car_year_of_manufacture');
-            echo $this->Form->control('model');
-            echo $this->Form->control('other_car_details');
+            echo $this->Form->control('car_manufacturer_code', ['id' => 'car_manufacturer_codeEdit']);
+            echo $this->Form->control('car_year_of_manufacture', ['id' => 'car_year_of_manufactureEdit']);
+            echo $this->Form->control('model', ['id' => 'modelEdit']);
+            echo $this->Form->control('other_car_details', ['id' => 'other_car_detailsEdit']);
         ?>
                     <input type="hidden" class="form-control" name="id" id="idEdit"/>
                     <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>

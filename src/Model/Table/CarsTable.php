@@ -45,11 +45,6 @@ class CarsTable extends Table
             'foreignKey' => 'car_id'
         ]);
 
-        $this->belongsToMany('Files', [
-            'foreignKey' => 'car_id',
-            'targetForeignKey' => 'file_id',
-            'joinTable' => 'cars_files'
-        ]);
     }
 
     /**
