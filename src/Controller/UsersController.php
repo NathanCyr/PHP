@@ -16,9 +16,9 @@ class UsersController extends AppController
     public function initialize()
 {
     parent::initialize();
-    
+    $this->loadComponent('RequestHandler');
     // Ajoute l'action 'add' à la liste des actions autorisées.
-    $this->Auth->allow(['logout', 'add']);
+    $this->Auth->allow(['logout', 'add', 'requestHandler']);
 }
 
 public function login()
@@ -63,7 +63,6 @@ public function logout()
         $user = $this->Users->get($id, [
             'contain' => []
         ]);
-
         $this->set('user', $user);
     }
 

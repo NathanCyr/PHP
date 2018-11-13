@@ -35,6 +35,8 @@ class Application extends BaseApplication
      */
     public function bootstrap()
     {
+        $this->addPlugin('CakePdf', ['bootstrap' => true]);
+
         $this->addPlugin('Crud');
 
         $this->addPlugin('Migrations');
