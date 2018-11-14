@@ -23,6 +23,8 @@
 <p>420-5B7-MO</p>
 <p>Automne 2018</p>
 <p>Collège Montmorency</p>
+<a href="https://github.com/NathanCyr/PHP">Lien github du projet</a>
+
 <h3>Visiteurs</h3>
 
  <p>Les visiteurs peuvent seulement voir les listes d'utilisateurs, de voitures et de fichiers sans rien pouvoir modifier.</p>
@@ -38,7 +40,13 @@
 	<p>Tous les droits</p>
 
 <h3>Code Coverage</h3>
-<a href="http://localhost/CyrNathan_TP1/webroot/coverage/index.html">Cliquez ici</a>
+<a href="http://localhost/Cyr_Nathan_TP1/webroot/coverage/index.html">Cliquez ici</a>
+
+<h3>TP2</h3>
+<p>Vous pouvez maintenant ajouter, modifier et effacer une voiture à l'aide d'une OnePageApp créée à l'aide du plugin CRUD. Il y a aussi quelques tests unitaires d'écrits avec PHPUnit ainsi qu'un 
+lien menant à la couverture de code faîtes par ledit plugin. Il y a maintenant un menu déroulant pour les vues du OnePageApp. Vous pouvez aussi générer une vue en tant que fichier PDF grâce au plugin
+CakePdf.</p>
+
 
 <h3>Diagramme BD original</h3>
 <?php echo $this->Html->image('bdOriginal.png', ['alt' => 'Base de donnée du site original']); ?>

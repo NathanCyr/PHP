@@ -99,4 +99,11 @@ class CarsControllerTest extends IntegrationTestCase
         $query = $this->Cars->find('all', ['conditions' => ['Cars.id' => 1]])->first();
         $this->assertEmpty($query);
     }
+
+    public function testAddUnauthenticated() {
+        $this->get('/cars/add');
+        $this->enableCsrfToken();
+        $this->enableSecurityToken();
+        $this->assertRedirect(['controller' => 'Users', 'action' => 'login', 'redirect'=> '/cars/add']);
+    }
 }

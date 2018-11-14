@@ -16,7 +16,7 @@ class PartsTableTest extends TestCase
      *
      * @var \App\Model\Table\PartsTable
      */
-    public $PartsTable;
+    public $Parts;
 
     /**
      * Fixtures
@@ -26,6 +26,7 @@ class PartsTableTest extends TestCase
     public $fixtures = [
         'app.parts',
         'app.cars',
+        'app.parent_parts',
         'app.suppliers'
     ];
 
@@ -38,7 +39,7 @@ class PartsTableTest extends TestCase
     {
         parent::setUp();
         $config = TableRegistry::getTableLocator()->exists('Parts') ? [] : ['className' => PartsTable::class];
-        $this->PartsTable = TableRegistry::getTableLocator()->get('Parts', $config);
+        $this->Parts = TableRegistry::getTableLocator()->get('Parts', $config);
     }
 
     /**
@@ -48,7 +49,7 @@ class PartsTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->PartsTable);
+        unset($this->Parts);
 
         parent::tearDown();
     }

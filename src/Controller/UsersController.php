@@ -133,4 +133,8 @@ public function logout()
     public function aPropos(){
         
     }
+
+    public function autocomplete(){
+        
+    }
 }

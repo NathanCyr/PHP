@@ -52,8 +52,8 @@ class PartsFixture extends TestFixture
                 'supplier_id' => 1,
                 'part_name' => 'Lorem ipsum dolor sit amet',
                 'weight' => 1,
-                'created' => '2018-11-13 20:13:18',
-                'modified' => '2018-11-13 20:13:18'
+                'created' => '2018-11-14 02:46:44',
+                'modified' => '2018-11-14 02:46:44'
             ],
         ];
         parent::init();

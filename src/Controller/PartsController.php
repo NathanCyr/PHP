@@ -21,7 +21,7 @@ class PartsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Cars', 'ParentParts', 'Suppliers']
+            'contain' => []
         ];
         $parts = $this->paginate($this->Parts);
 
@@ -38,7 +38,7 @@ class PartsController extends AppController
     public function view($id = null)
     {
         $part = $this->Parts->get($id, [
-            'contain' => ['Cars', 'ParentParts', 'Suppliers']
+            'contain' => []
         ]);
 
         $this->set('part', $part);
@@ -62,9 +62,8 @@ class PartsController extends AppController
             $this->Flash->error(__('The part could not be saved. Please, try again.'));
         }
         $cars = $this->Parts->Cars->find('list', ['limit' => 200]);
-        $parentParts = $this->Parts->ParentParts->find('list', ['limit' => 200]);
         $suppliers = $this->Parts->Suppliers->find('list', ['limit' => 200]);
-        $this->set(compact('part', 'cars', 'parentParts', 'suppliers'));
+        $this->set(compact('part'));
     }
 
     /**
@@ -91,7 +90,7 @@ class PartsController extends AppController
         $cars = $this->Parts->Cars->find('list', ['limit' => 200]);
         $parentParts = $this->Parts->ParentParts->find('list', ['limit' => 200]);
         $suppliers = $this->Parts->Suppliers->find('list', ['limit' => 200]);
-        $this->set(compact('part', 'cars', 'parentParts', 'suppliers'));
+        $this->set(compact('part'));
     }
 
     /**

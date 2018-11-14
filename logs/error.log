@@ -6400,3 +6400,517 @@ Stack Trace:
 #26 {main}
 
 
+2018-11-14 01:02:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/coverage/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-14 02:43:14 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::autocomplete() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'autocomplete',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/autocomplete
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-14 02:43:43 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::autocomplete() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'autocomplete',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/autocomplete
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-11-14 02:45:49 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/users/login?redirect=%2Fparts%2Fadd
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:46:50 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/users/login?redirect=%2Fparts%2Fadd
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:46:57 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/users/a-propos
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:47:59 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/users/a-propos
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:48:01 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/users/a-propos
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:51:00 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts
+Referer URL: http://localhost/Cyr_Nathan_TP1/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(680): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(524): Cake\ORM\Table->getPrimaryKey()
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(479): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\PartsTable), Object(Cake\Database\TypeMap), Array)
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(840): Cake\ORM\Query->contain(Array)
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2409): Cake\ORM\Query->applyOptions(Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1360): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Datasource\Paginator.php(180): Cake\ORM\Table->find('all', Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(200): Cake\Datasource\Paginator->paginate(Object(App\Model\Table\PartsTable), Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(885): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\PartsTable), Array)
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(26): Cake\Controller\Controller->paginate(Object(App\Model\Table\PartsTable))
+#12 [internal function]: App\Controller\PartsController->index()
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-11-14 02:52:38 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/parts
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:53:07 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/parts
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:54:05 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/parts
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:54:07 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/parts
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:54:14 Error: [Cake\Database\Exception] Cannot describe parent_parts. It has 0 columns.
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/parts/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('parent_parts', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(555): Cake\Database\Schema\CachedCollection->describe('parent_parts')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(271): Cake\ORM\Table->getSchema()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1765): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1357): Cake\ORM\Table->query()
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\ORM\Association.php(1079): Cake\ORM\Table->find('list', Array)
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Association->find('list', Array)
+#8 [internal function]: App\Controller\PartsController->add()
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-11-14 02:54:47 Error: [RuntimeException] Table "App\Model\Table\PartsTable" is not associated with "ParentParts"
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/parts/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\src\Controller\PartsController.php(65): Cake\ORM\Table->__get('ParentParts')
+#1 [internal function]: App\Controller\PartsController->add()
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\AppController->invokeAction()
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-11-14 03:01:19 Error: [ParseError] syntax error, unexpected '<', expecting end of file
+Request URL: /parts/add
+Referer URL: http://localhost/Cyr_Nathan_TP1/parts
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\View\View.php(1201): Cake\View\View->_evaluate('C:\\Program File...', Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\View\View.php(803): Cake\View\View->_render('C:\\Program File...')
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(790): Cake\View\View->render(NULL, NULL)
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PartsController))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-11-14 03:22:54 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\autocomplete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\autocomplete.ctp',
+)
+Request URL: /users/autocomplete
+Referer URL: http://localhost/Cyr_Nathan_TP1/parts/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\View\View.php(799): Cake\View\View->_getViewFileName('Users\\autocompl...')
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(790): Cake\View\View->render(NULL, NULL)
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+

@@ -44,16 +44,10 @@ class PartsTable extends Table
         $this->addBehavior('Timestamp');
 
         $this->belongsTo('Cars', [
-            'foreignKey' => 'car_id',
-            'joinType' => 'INNER'
-        ]);
-        $this->belongsTo('ParentParts', [
-            'foreignKey' => 'parent_part_id',
-            'joinType' => 'INNER'
+            'foreignKey' => 'car_id'
         ]);
         $this->belongsTo('Suppliers', [
-            'foreignKey' => 'supplier_id',
-            'joinType' => 'INNER'
+            'foreignKey' => 'supplier_id'
         ]);
     }
 
@@ -71,29 +65,23 @@ class PartsTable extends Table
 
         $validator
             ->integer('part_level_code')
-            ->requirePresence('part_level_code', 'create')
-            ->notEmpty('part_level_code');
+            ->allowEmpty('part_level_code');
 
         $validator
             ->integer('part_manufacturer_code')
-            ->requirePresence('part_manufacturer_code', 'create')
-            ->notEmpty('part_manufacturer_code');
+            ->allowEmpty('part_manufacturer_code');
 
         $validator
             ->integer('part_type_code')
-            ->requirePresence('part_type_code', 'create')
-            ->notEmpty('part_type_code');
+            ->allowEmpty('part_type_code');
 
         $validator
             ->scalar('part_name')
-            ->maxLength('part_name', 255)
-            ->requirePresence('part_name', 'create')
-            ->notEmpty('part_name');
+            ->allowEmpty('part_name');
 
         $validator
             ->integer('weight')
-            ->requirePresence('weight', 'create')
-            ->notEmpty('weight');
+            ->allowEmpty('weight');
 
         return $validator;
     }
@@ -108,7 +96,6 @@ class PartsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['car_id'], 'Cars'));
-        $rules->add($rules->existsIn(['parent_part_id'], 'ParentParts'));
         $rules->add($rules->existsIn(['supplier_id'], 'Suppliers'));
 
         return $rules;
