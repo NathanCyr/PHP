@@ -7,7 +7,7 @@
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Cars'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Cars'), ['controller' => 'Cars', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('List Parts'), ['controller' => 'Parts', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Part'), ['controller' => 'Parts', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
@@ -40,7 +40,7 @@
 	<p>Tous les droits</p>
 
 <h3>Code Coverage</h3>
-<a href="http://localhost/Cyr_Nathan_TP1/webroot/coverage/index.html">Cliquez ici</a>
+<a href="http://localhost/Cyr_Nathan_TP2/webroot/coverage/index.html">Cliquez ici</a>
 
 <h3>TP2</h3>
 <p>Vous pouvez maintenant ajouter, modifier et effacer une voiture à l'aide d'une OnePageApp créée à l'aide du plugin CRUD. Il y a aussi quelques tests unitaires d'écrits avec PHPUnit ainsi qu'un 
