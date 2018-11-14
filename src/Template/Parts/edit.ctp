@@ -25,12 +25,9 @@
     <fieldset>
         <legend><?= __('Edit Part') ?></legend>
         <?php
-            echo $this->Form->control('car_id', ['options' => $cars, 'empty' => true]);
-            echo $this->Form->control('parent_part_id');
             echo $this->Form->control('part_level_code');
             echo $this->Form->control('part_manufacturer_code');
             echo $this->Form->control('part_type_code');
-            echo $this->Form->control('supplier_id', ['options' => $suppliers, 'empty' => true]);
             echo $this->Form->control('part_name');
             echo $this->Form->control('weight');
         ?>

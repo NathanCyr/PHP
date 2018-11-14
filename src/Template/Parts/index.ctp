@@ -20,12 +20,9 @@
         <thead>
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('car_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('parent_part_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('part_level_code') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('part_manufacturer_code') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('part_type_code') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('supplier_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('part_name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('weight') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
@@ -38,7 +35,6 @@
             <tr>
                 <td><?= $this->Number->format($part->id) ?></td>
                 <td><?= $part->has('car') ? $this->Html->link($part->car->id, ['controller' => 'Cars', 'action' => 'view', $part->car->id]) : '' ?></td>
-                <td><?= $this->Number->format($part->parent_part_id) ?></td>
                 <td><?= $this->Number->format($part->part_level_code) ?></td>
                 <td><?= $this->Number->format($part->part_manufacturer_code) ?></td>
                 <td><?= $this->Number->format($part->part_type_code) ?></td>
