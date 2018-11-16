@@ -10,6 +10,8 @@ use App\Controller\AppController;
  *
  * @method \App\Model\Entity\Part[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
+
+ 
 class PartsController extends AppController
 {
 
@@ -111,5 +113,22 @@ class PartsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function getByCar() {
+        $car_id = $this->request->query('car_id');
+        $parts = $this->Parts->find('all', [
+            'conditions' => ['parts.car_id' => $car_id],
+        ]);
+        $this->set('parts', $parts);
+        $this->set('_serialize', ['parts']);
+    }
+
+    public function getPartsSortedByCars() {
+        $cars = $this->Parts->Cars->find('all', [
+            'contain' => ['Parts'],
+        ]);
+        $this->set('cars',$countries);
+        $this->set('_serialize', ['cars']);
     }
 }
