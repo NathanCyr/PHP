@@ -223,3 +223,8 @@ app.service('CarCRUDService',['$http', function ($http) {
     }
 
 }]);
+
+$(document).ready(function () {
+    localStorage.setItem('token', "no token");
+    $('#changePass').hide();
+});

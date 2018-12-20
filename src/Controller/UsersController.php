@@ -27,7 +27,7 @@ public function login()
         $user = $this->Auth->identify();
         if ($user) {
             $this->Auth->setUser($user);
-            return $this->redirect($this->Auth->redirectUrl());
+            return $this->redirect($this->Auth->redirectUrl(['controller' => 'Cars','action' =>  'index']));
         }
         $this->Flash->error('Votre identifiant ou votre mot de passe est incorrect.');
     }

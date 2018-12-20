@@ -9619,3 +9619,667 @@ Stack Trace:
 #21 {main}
 
 
+2018-12-20 16:28:32 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:36:16 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:36:29 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:37:01 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:37:20 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:37:36 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:38:02 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/users/8
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\UsersController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:38:50 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:38:57 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:39:35 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/users/8
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\UsersController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:43:06 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/users/2
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\UsersController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:43:19 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:43:47 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/users/8
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\UsersController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\UsersController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:44:43 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:45:46 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:46:51 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:46:52 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:47:07 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:47:09 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:51:21 Error: [Cake\Http\Exception\UnauthorizedException] Invalid username or password
+Request URL: /api/users/token
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 [internal function]: App\Controller\Api\UsersController->token()
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-12-20 16:52:26 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 16:52:41 Error: [Cake\Http\Exception\UnauthorizedException] Invalid username or password
+Request URL: /api/users/token
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 [internal function]: App\Controller\Api\UsersController->token()
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(63): call_user_func_array(Array, Array)
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\UsersController))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-12-20 17:04:40 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP2/
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-20 17:34:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/Parts/autocomplete.js
+Referer URL: http://localhost/Cyr_Nathan_TP2/parts/add
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(91): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP2\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
