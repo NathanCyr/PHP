@@ -13,96 +13,94 @@ echo $this->Html->script('Cars/index', ['block' => 'scriptBottom']);
 
 
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-<head>
-    <meta charset="UTF-8">
+	<html ng-app="app">
+		<head>
+			<meta charset="UTF-8">
+			<title>Cars index</title>
+		</head>
+		<body>
+		<div ng-controller = "usersCtrl">
 
-    <title>Crud PHP Ajax Example</title>
-</head>
-<body>
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Pages
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        <li><?= $this->Html->link(__('List Cars'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Parts'), ['controller' => 'Parts', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Part'), ['controller' => 'Parts', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Countries'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Provinces'), ['controller' => 'Provinces', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Province'), ['controller' => 'Provinces', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('New Country'), ['controller' => 'Countries', 'action' => 'add']) ?></li>
-    </ul>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="panel panel-default cars-content">
-            <div class="panel-heading">Cars <a href="javascript:void(0);" class="glyphicon glyphicon-plus" id="addLink" onclick="javascript:$('#addForm').slideToggle();">Add</a></div>
-            <div class="panel-body none formData" id="addForm">
-                <h2 id="actionLabel">Add Car</h2>
-                <form class="form" id="carForm">
-                <?php
-            echo $this->Form->control('car_manufacturer_code');
-            echo $this->Form->control('car_year_of_manufacture');
-            echo $this->Form->control('model');
-            echo $this->Form->control('other_car_details');
-        ?>
-                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-success" onclick="carAction('add')">Add Car</a>
-                </form>
-            </div>
-            <div class="panel-body none formData" id="editForm">
-                <h2 id="actionLabel">Edit Car</h2>
-                <form class="form" id="carForm">
-                <?php
-            echo $this->Form->control('car_manufacturer_code', ['id' => 'car_manufacturer_codeEdit']);
-            echo $this->Form->control('car_year_of_manufacture', ['id' => 'car_year_of_manufactureEdit']);
-            echo $this->Form->control('model', ['id' => 'modelEdit']);
-            echo $this->Form->control('other_car_details', ['id' => 'other_car_detailsEdit']);
-        ?>
-                    <input type="hidden" class="form-control" name="id" id="idEdit"/>
-                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-success" onclick="carAction('edit')">Update Car</a>
-                </form>
-            </div>
-            <table class="table table-striped">
-                <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Model</th>
-                </tr>
-                </thead>
-                <tbody id="carData">
-                <?php
-                foreach ($cars as $car):
-                    ?>
-                    <tr>
-                        <td><?php echo $car['id']; ?></td>
-                        <td><?php echo $car['model']; ?></td>
-                        <td>
-                            <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCar('<?php echo $car['id']; ?>')"></a>
-                            <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? carAction('delete', '<?php echo $car['id']; ?>') : false;"></a>
-                        </td>
-                    </tr>
-                <?php endforeach;?>
+<div id="logDiv" style="margin: 10px 0 20px 0;"><a href="javascript:void(0);" class="glyphicon glyphicon-log-in" id="login-btn" onclick="javascript:$('#loginForm').slideToggle();">Login</a></div>
 
-                </tbody>
-            </table>
-        </div>
-    </div>
+<div class="none formData" id="loginForm">
+	<form class="form" enctype='application/json'>
+		<div class="form-group">
+			<label>Username</label>
+			<input ng-model="username" type="text" class="form-control" id="username" name="username" style="width: 250px" />
+			<label>Password</label>
+			<input ng-model="password" type="password" class="form-control" id="password" name="password"  style="width: 250px"/>
+		</div>
+		<a href="javascript:void(0);" class="btn btn-warning" onclick="$('#loginForm').slideUp(); emptyInput();">Cancel</a>
+		<a href="javascript:void(0);" class="btn btn-success" ng-click="login()">Submit</a>
+	</form>
 </div>
-</body>
-<?= $this->fetch('scriptLibraries') ?>
-<?= $this->fetch('script'); ?>
-<?= $this->fetch('scriptBottom') ?>
-</html>
+
+<div class="panel-body none formData" id="changeForm">
+	<form class="form" enctype='application/json'>
+		<div class="form-group">
+			<label>New password</label>
+			<input ng-model="newPassword" type="password" class="form-control" id="form-password" name="form-password" style="width: 250px" />
+		</div>
+		<a href="javascript:void(0);" class="btn btn-warning" onclick="$('#changeForm').slideUp(); emptyInput();">Cancel</a>
+		<a href="javascript:void(0);" class="btn btn-success" ng-click="changePassword()">Submit</a>
+		<a href="javascript:void(0);" class="btn btn-warning" ng-click="logout()">Logout</a>
+	</form>
+</div>
+<br>
+<div>
+	<p style="color: green;">{{messageLogin}}</p>
+	<p style="color: red;">{{errorLogin}}</p>
+</div>
+<br>
+
+</div>
+			<div ng-controller="CarCRUDController">
+				<table>
+					<tr>
+						<td width="100">ID:</td>
+						<td><input type="text" id="id" ng-model="car.id" /></td>
+					</tr>
+					<tr>
+						<td width="100">Model:</td>
+						<td><input type="text" id="model" ng-model="car.model" /></td>
+					</tr>
+					<tr>
+						<td width="100">Car manufacturer code:</td>
+						<td><input type="text" id="car_manufacturer_code" ng-model="car.manufacturerCode" /></td>
+					</tr>
+					<tr>
+						<td width="100">Car year of manufacture:</td>
+						<td><input type="text" id="car_year_of_manufacture" ng-model="car.yearManufacture" /></td>
+					</tr>
+
+				</table>
+				<br /> <br /> 
+				<a ng-click="updateCar(car.id,car.model)">Update car</a> 
+				<a ng-click="addCar(car.model)">Add car</a> 
+			<br /> <br />
+			<p style="color: green">{{message}}</p>
+			<p style="color: red">{{errorMessage}}</p>
+			 
+			<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Id</th>
+									<th>Model</th>
+									<th>Action</th>
+								</tr>
+							</thead>
+										<tr ng-repeat="car in cars">
+											<td>{{car.id}}</td>
+											<td>{{car.model}}</td>
+											
+											<td>
+												<a href="javascript:void(0);" class="glyphicon glyphicon-edit" ng-click="getCar(car.id)"></a>
+												<a href="javascript:void(0);" class="glyphicon glyphicon-trash" ng-click="deleteCar(car.id)"></a>
+											</td>
+										</tr>
+						</table>
+					   
+			</div>
+		</body>
+	</html>

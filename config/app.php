@@ -170,7 +170,7 @@ return [
      */
     'Error' => [
         'errorLevel' => E_ALL & ~E_USER_DEPRECATED,
-        'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
+        'exceptionRenderer' => 'Crud\Error\ExceptionRenderer',
         'skipLog' => [],
         'log' => true,
         'trace' => true,

@@ -56,7 +56,7 @@ class MenuLinkTreesFixture extends TestFixture
      *
      * ***
      *
-     * # cars:
+     * # categories:
      *
      *  - electronics:9
      *      - televisions:10
@@ -137,7 +137,7 @@ class MenuLinkTreesFixture extends TestFixture
             'title' => 'Link 8',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '1',
             'rght' => '10',
             'parent_id' => null,
@@ -145,75 +145,75 @@ class MenuLinkTreesFixture extends TestFixture
             'title' => 'electronics',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '2',
             'rght' => '9',
             'parent_id' => '9',
-            'url' => '/car/televisions.html',
+            'url' => '/category/televisions.html',
             'title' => 'televisions',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '3',
             'rght' => '4',
             'parent_id' => '10',
-            'url' => '/car/tube.html',
+            'url' => '/category/tube.html',
             'title' => 'tube',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '5',
             'rght' => '8',
             'parent_id' => '10',
-            'url' => '/car/lcd.html',
+            'url' => '/category/lcd.html',
             'title' => 'lcd',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '6',
             'rght' => '7',
             'parent_id' => '12',
-            'url' => '/car/plasma.html',
+            'url' => '/category/plasma.html',
             'title' => 'plasma',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '11',
             'rght' => '20',
             'parent_id' => null,
-            'url' => '/car/portable.html',
+            'url' => '/category/portable.html',
             'title' => 'portable',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '12',
             'rght' => '15',
             'parent_id' => '14',
-            'url' => '/car/mp3.html',
+            'url' => '/category/mp3.html',
             'title' => 'mp3',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '13',
             'rght' => '14',
             'parent_id' => '15',
-            'url' => '/car/flash.html',
+            'url' => '/category/flash.html',
             'title' => 'flash',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '16',
             'rght' => '17',
             'parent_id' => '14',
-            'url' => '/car/cd.html',
+            'url' => '/category/cd.html',
             'title' => 'cd',
         ],
         [
-            'menu' => 'cars',
+            'menu' => 'categories',
             'lft' => '18',
             'rght' => '19',
             'parent_id' => '14',
-            'url' => '/car/radios.html',
+            'url' => '/category/radios.html',
             'title' => 'radios',
         ],
     ];

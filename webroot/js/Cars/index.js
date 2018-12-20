@@ -1,93 +1,214 @@
-function getCars() {
-    $.ajax({
-        type: 'GET',
-        url: urlToRestApi,
-        dataType: "json",
-        success:
-                function (cars) {
-                    var carTable = $('#carData');
-                    carTable.empty();
-                    var count = 1;
-                    $.each(cars.data, function (key, value)
-                    {
-                        var editDeleteButtons = '</td><td>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCar(' + value.id + ')"></a>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? carAction(\'delete\', ' + value.id + ') : false;"></a>' +
-                                '</td></tr>';
-                        carTable.append('<tr><td>' + value.id + '</td><td>' + value.name + '</td><td>' + editDeleteButtons);
-                        count++;
-                    });
+var app = angular.module('app', []);
 
-                }
-    });
-}
+app.controller('usersCtrl', function ($scope, $compile, $http) {
 
-/* Function takes a jquery form
- and converts it to a JSON dictionary */
-function convertFormToJSON(form) {
-    var array = $(form).serializeArray();
-    var json = {};
+    $scope.login = function () {
 
-    $.each(array, function () {
-        json[this.name] = this.value || '';
-    });
+        var req = {
+            method: 'POST',
+            url: 'api/users/token',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            data: {username: $scope.username, password: $scope.password}
+        }
+        // fields in key-value pairs
+        $http(req)
+			.success(function (jsonData, status, headers, config) {
 
-    return json;
-}
+                localStorage.setItem('token', jsonData.data.token);
+                localStorage.setItem('user_id', jsonData.data.id);
 
 
+                // Switch button for Logout
+                $('#logDiv').html(
+                    $compile('<a href="javascript:void(0);" class="glyphicon glyphicon-log-out" id="login-btn" onclick="javascript:$(\'#changeForm\').slideToggle();">Logout/Modify</a>')($scope)
+                );
 
-function carAction(type, id) {
-    id = (typeof id == "undefined") ? '' : id;
-    var statusArr = {add: "added", edit: "updated", delete: "deleted"};
-    var requestType = '';
-    var carData = '';
-    var ajaxUrl = urlToRestApi;
-    if (type == 'add') {
-        requestType = 'POST';
-        carData = convertFormToJSON($("#addForm").find('.form'));
-    } else if (type == 'edit') {
-        requestType = 'PUT';
-		ajaxUrl = ajaxUrl + "/" + idEdit.value;
-        carData = convertFormToJSON($("#editForm").find('.form'));
-		
-    } else {
-        requestType = 'DELETE';
-        ajaxUrl = ajaxUrl + "/" + id;
+
+                $('#loginForm').slideUp();
+
+                //$scope.messageLogin = 'Welcome!';
+                $scope.errorLogin = '';
+            })
+
+            .error(function (data, status, headers, config) {
+                $scope.messageLogin = '';
+                $scope.errorLogin = 'Invalid credentials';
+            });
+
     }
-    $.ajax({
-        type: requestType,
-        url: ajaxUrl,
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(carData),
-        success: function (msg) {
-            if (msg) {
-                alert('Car data has been ' + statusArr[type] + ' successfully.');
-                getCars();
-                $('.form')[0].reset();
-                $('.formData').slideUp();
-                window.location.reload(true); 
-            } else {
-                alert('Some problem occurred, please try again.');
-            }
-        }
-    });
-}
 
+    $scope.logout = function () {
+        localStorage.setItem('token', "no token");
 
-function editCar(id) {
-    $.ajax({
-        type: 'GET',
-        dataType: 'JSON',
-        url: urlToRestApi+ "/" + id,
-        success: function (data) {
-            $('#idEdit').val(data.data.id);
-            $('#car_manufacturer_codeEdit').val(data.data.car_manufacturer_code);
-            $('#car_year_of_manufactureEdit').val(data.data.car_year_of_manufacture);
-            $('#modelEdit').val(data.data.model);
-            $('#other_car_detailsEdit').val(data.data.other_car_details);
-            $('#editForm').slideDown();
+        $('#logDiv').html(
+            $compile('<a href="javascript:void(0);" class="glyphicon glyphicon-log-in" id="login-btn" onclick="javascript:$(\'#loginForm\').slideToggle();">Login</a>')($scope)
+        );
+
+        $('#changeForm').slideUp();
+        $scope.messageLogin = 'You have logged out';
+        $scope.errorLogin = '';
+
+    }
+    $scope.changePassword = function () {
+        var req = {
+            method: 'PUT',
+            url: 'api/users/' + localStorage.getItem("user_id"),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + localStorage.getItem("token")
+            },
+            data: {'password': $scope.newPassword}
         }
-    });
-}
+        $http(req)
+            .success(function (response) {
+                $('#changeForm').slideUp();
+                $scope.messageLogin = 'Password successfully changed! ';
+            })
+            .error(function (response) {
+                $scope.errorLogin = 'Impossible to change the password!';
+
+            });
+    };
+});
+
+app.controller('CarCRUDController', ['$scope','CarCRUDService', function ($scope,CarCRUDService) {
+	  
+    $scope.updateCar = function () {
+        CarCRUDService.updateCar($scope.car.id,$scope.car.model)
+          .then(function success(response){
+              $scope.message = 'Car data updated!';
+              $scope.errorMessage = '';
+              $scope.car.id = '';
+              $scope.car.model = '';
+              $scope.getAllCars();
+          },
+          function error(response){
+              $scope.errorMessage = 'Error updating Car Type!';
+              $scope.message = '';
+          });
+    }
+    
+    $scope.getCar = function ($id) {
+
+        CarCRUDService.getCar($id)
+          .then(function success(response){
+              $scope.car = response.data.data;
+              $scope.car.id = $id;
+              $scope.message='';
+              $scope.errorMessage = '';
+              $scope.getAllCars();
+              
+          },
+          function error (response ){
+              $scope.message = '';
+              if (response.status === 404){
+                  $scope.errorMessage = 'Car not found!';
+              }
+              else {
+                  $scope.errorMessage = "Error getting Car!";
+              }
+          });
+    }
+    
+    $scope.addCar = function () {
+        if ($scope.car != null && $scope.car.model) {
+            CarCRUDService.addCar($scope.car.model)
+              .then (function success(response){
+                  $scope.message = 'Car added!';
+                  $scope.errorMessage = '';
+                  $scope.car.id = '';
+                  $scope.car.model = '';
+                  $scope.car.manufacturerCode = '';
+                  $scope.car.yearManufacture = '';
+                  $scope.getAllCars();
+              },
+              function error(response){
+                  $scope.errorMessage = 'Error adding Car!';
+                  $scope.message = '';
+            });
+        }
+        else {
+            $scope.errorMessage = 'Please enter a model!';
+            $scope.message = '';
+        }
+    }
+    
+    $scope.deleteCar = function ($id) {
+        CarCRUDService.deleteCar($id)
+          .then (function success(response){
+              $scope.message = 'Car deleted!';
+              $scope.car = null;
+              $scope.errorMessage='';
+              $scope.getAllCars();
+          },
+          function error(response){
+              $scope.errorMessage = 'Error deleting Car!';
+              $scope.message='';
+          })
+    }
+    
+    $scope.getAllCars = function () {
+        CarCRUDService.getAllCars()
+          .then(function success(response){
+              $scope.car = response.data.data;
+              $scope.message='';
+              $scope.errorMessage = '';
+          },
+          function error (response ){
+              $scope.message='';
+              $scope.errorMessage = 'Error getting Cars!';
+          });
+    }
+    $scope.getAllCars();
+}]);
+
+app.service('CarCRUDService',['$http', function ($http) {
+	
+    this.getCar = function getCar(carId){
+        return $http({
+          method: 'GET',
+          url: urlToRestApi+'/'+carId,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+	}
+	
+    this.addCar = function addCar(model){
+        return $http({
+          method: 'POST',
+          url: urlToRestApi,
+          data: {model:model},
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        });
+    }
+	
+    this.deleteCar = function deleteCar(id){
+        return $http({
+          method: 'DELETE',
+          url: urlToRestApi+'/'+id ,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        })
+    }
+	
+    this.updateCar = function updateCar(id,model){
+        return $http({
+          method: 'PATCH',
+          url: urlToRestApi+'/'+id,
+          data: {model:model},
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+        })
+    }
+	
+    this.getAllCars = function getAllCars(){
+        return $http({
+          method: 'GET',
+          url: urlToRestApi,
+          headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
+
+        });
+    }
+
+}]);

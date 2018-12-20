@@ -62,12 +62,12 @@ class CarsTable extends Table
         $validator
             ->integer('car_manufacturer_code')
             ->requirePresence('car_manufacturer_code', 'create')
-            ->notEmpty('car_manufacturer_code');
+            ->allowEmpty('car_manufacturer_code');
 
         $validator
             ->integer('car_year_of_manufacture')
             ->requirePresence('car_year_of_manufacture', 'create')
-            ->notEmpty('car_year_of_manufacture');
+            ->allowEmpty('car_year_of_manufacture');
 
         $validator
             ->scalar('model')

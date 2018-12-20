@@ -1,17 +1,68 @@
 [
     {
-        "name": "ajgl/breakpoint-twig-extension",
-        "version": "0.3.1",
-        "version_normalized": "0.3.1.0",
+        "name": "admad/cakephp-jwt-auth",
+        "version": "2.3.2",
+        "version_normalized": "2.3.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/ajgarlag/AjglBreakpointTwigExtension.git",
-            "reference": "360ec6351ad7e1968ee78abb31430046c2e04fc5"
+            "url": "https://github.com/ADmad/cakephp-jwt-auth.git",
+            "reference": "d8d39a94783e1bc96a5a7155106072f304bb6ea2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ajgarlag/AjglBreakpointTwigExtension/zipball/360ec6351ad7e1968ee78abb31430046c2e04fc5",
-            "reference": "360ec6351ad7e1968ee78abb31430046c2e04fc5",
+            "url": "https://api.github.com/repos/ADmad/cakephp-jwt-auth/zipball/d8d39a94783e1bc96a5a7155106072f304bb6ea2",
+            "reference": "d8d39a94783e1bc96a5a7155106072f304bb6ea2",
+            "shasum": ""
+        },
+        "require": {
+            "cakephp/cakephp": "^3.5",
+            "firebase/php-jwt": "^5.0"
+        },
+        "require-dev": {
+            "cakephp/chronos": "^1.1",
+            "phpunit/phpunit": "^5.7.14|^6.0"
+        },
+        "time": "2018-04-20T07:58:59+00:00",
+        "type": "cakephp-plugin",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ADmad\\JwtAuth\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "ADmad",
+                "homepage": "https://github.com/ADmad",
+                "role": "Author"
+            }
+        ],
+        "description": "CakePHP plugin for authenticating using JSON Web Tokens",
+        "homepage": "http://github.com/ADmad/cakephp-jwt-auth",
+        "keywords": [
+            "Authentication",
+            "authenticate",
+            "cakephp",
+            "jwt"
+        ]
+    },
+    {
+        "name": "ajgl/breakpoint-twig-extension",
+        "version": "0.3.2",
+        "version_normalized": "0.3.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ajgarlag/AjglBreakpointTwigExtension.git",
+            "reference": "bb419d13775d8fb5cd03b31012eaf496b31b444f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ajgarlag/AjglBreakpointTwigExtension/zipball/bb419d13775d8fb5cd03b31012eaf496b31b444f",
+            "reference": "bb419d13775d8fb5cd03b31012eaf496b31b444f",
             "shasum": ""
         },
         "require": {
@@ -19,16 +70,16 @@
             "twig/twig": "^1.14|^2.0"
         },
         "require-dev": {
-            "phpunit/phpunit": "^5",
-            "symfony/framework-bundle": "^2.7|^3.2",
-            "symfony/twig-bundle": "^2.7|^3.2"
+            "symfony/framework-bundle": "^2.7|^3.2|^4.1",
+            "symfony/phpunit-bridge": "^3.4|^4.1",
+            "symfony/twig-bundle": "^2.7|^3.2|^4.1"
         },
         "suggest": {
             "ext-xdebug": "The Xdebug extension is required for the breakpoint to work",
             "symfony/framework-bundle": "The framework bundle to integrate the extension into Symfony",
             "symfony/twig-bundle": "The twig bundle to integrate the extension into Symfony"
         },
-        "time": "2017-11-20T13:04:11+00:00",
+        "time": "2018-12-10T08:22:36+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -226,17 +277,17 @@
     },
     {
         "name": "cakephp/bake",
-        "version": "1.8.5",
-        "version_normalized": "1.8.5.0",
+        "version": "1.8.7",
+        "version_normalized": "1.8.7.0",
         "source": {
             "type": "git",
             "url": "https://github.com/cakephp/bake.git",
-            "reference": "d4b1a9283bd79728d22090a35dbf0c1f0285505c"
+            "reference": "8a675e3a472014b6d1bc492db4daea328ba6a5a8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/cakephp/bake/zipball/d4b1a9283bd79728d22090a35dbf0c1f0285505c",
-            "reference": "d4b1a9283bd79728d22090a35dbf0c1f0285505c",
+            "url": "https://api.github.com/repos/cakephp/bake/zipball/8a675e3a472014b6d1bc492db4daea328ba6a5a8",
+            "reference": "8a675e3a472014b6d1bc492db4daea328ba6a5a8",
             "shasum": ""
         },
         "require": {
@@ -249,7 +300,7 @@
             "cakephp/cakephp-codesniffer": "^3.0",
             "phpunit/phpunit": "^5.7.14|^6.0"
         },
-        "time": "2018-11-04T20:34:12+00:00",
+        "time": "2018-12-04T04:23:24+00:00",
         "type": "cakephp-plugin",
         "installation-source": "dist",
         "autoload": {
@@ -276,17 +327,17 @@
     },
     {
         "name": "cakephp/cakephp",
-        "version": "3.6.13",
-        "version_normalized": "3.6.13.0",
+        "version": "3.6.14",
+        "version_normalized": "3.6.14.0",
         "source": {
             "type": "git",
             "url": "https://github.com/cakephp/cakephp.git",
-            "reference": "6a0b9c74710a56c5974d1c8229c7a91dac780402"
+            "reference": "4ce123c1255e8ada474d02703abede3f8dced3bf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/cakephp/cakephp/zipball/6a0b9c74710a56c5974d1c8229c7a91dac780402",
-            "reference": "6a0b9c74710a56c5974d1c8229c7a91dac780402",
+            "url": "https://api.github.com/repos/cakephp/cakephp/zipball/4ce123c1255e8ada474d02703abede3f8dced3bf",
+            "reference": "4ce123c1255e8ada474d02703abede3f8dced3bf",
             "shasum": ""
         },
         "require": {
@@ -324,7 +375,7 @@
             "ext-openssl": "To use Security::encrypt() or have secure CSRF token generation.",
             "lib-ICU": "The intl PHP library, to use Text::transliterate() or Text::slug()"
         },
-        "time": "2018-11-04T20:29:27+00:00",
+        "time": "2018-12-07T03:21:25+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -364,27 +415,27 @@
     },
     {
         "name": "cakephp/cakephp-codesniffer",
-        "version": "3.0.5",
-        "version_normalized": "3.0.5.0",
+        "version": "3.1.1",
+        "version_normalized": "3.1.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/cakephp/cakephp-codesniffer.git",
-            "reference": "7f467fee00fd016b62cf8c85a57750ab2a895e81"
+            "reference": "682e79fda294c4383e094a2a881e16dcf1130750"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/cakephp/cakephp-codesniffer/zipball/7f467fee00fd016b62cf8c85a57750ab2a895e81",
-            "reference": "7f467fee00fd016b62cf8c85a57750ab2a895e81",
+            "url": "https://api.github.com/repos/cakephp/cakephp-codesniffer/zipball/682e79fda294c4383e094a2a881e16dcf1130750",
+            "reference": "682e79fda294c4383e094a2a881e16dcf1130750",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.4",
+            "php": ">=5.6",
             "squizlabs/php_codesniffer": "^3.0.0"
         },
         "require-dev": {
             "phpunit/phpunit": "<6.0"
         },
-        "time": "2018-06-09T16:01:01+00:00",
+        "time": "2018-11-30T16:04:05+00:00",
         "type": "phpcodesniffer-standard",
         "installation-source": "dist",
         "autoload": {
@@ -470,17 +521,17 @@
     },
     {
         "name": "cakephp/debug_kit",
-        "version": "3.16.5",
-        "version_normalized": "3.16.5.0",
+        "version": "3.16.6",
+        "version_normalized": "3.16.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/cakephp/debug_kit.git",
-            "reference": "7672bb9688465ac263a65468102307bf506069bc"
+            "reference": "b6a75d47b2b1be6f6db31fbdf60ed5e062f310db"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/7672bb9688465ac263a65468102307bf506069bc",
-            "reference": "7672bb9688465ac263a65468102307bf506069bc",
+            "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/b6a75d47b2b1be6f6db31fbdf60ed5e062f310db",
+            "reference": "b6a75d47b2b1be6f6db31fbdf60ed5e062f310db",
             "shasum": ""
         },
         "require": {
@@ -498,7 +549,7 @@
         "suggest": {
             "ext-pdo_sqlite": "DebugKit needs to store panel data in a database. SQLite is simple and easy to use."
         },
-        "time": "2018-10-02T01:12:48+00:00",
+        "time": "2018-11-22T15:19:18+00:00",
         "type": "cakephp-plugin",
         "installation-source": "dist",
         "autoload": {
@@ -688,17 +739,17 @@
     },
     {
         "name": "composer/composer",
-        "version": "1.7.3",
-        "version_normalized": "1.7.3.0",
+        "version": "1.8.0",
+        "version_normalized": "1.8.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/composer/composer.git",
-            "reference": "e965b9aaa8854c3067f1ed2ae45f436572d73eb7"
+            "reference": "d8aef3af866b28786ce9b8647e52c42496436669"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/composer/zipball/e965b9aaa8854c3067f1ed2ae45f436572d73eb7",
-            "reference": "e965b9aaa8854c3067f1ed2ae45f436572d73eb7",
+            "url": "https://api.github.com/repos/composer/composer/zipball/d8aef3af866b28786ce9b8647e52c42496436669",
+            "reference": "d8aef3af866b28786ce9b8647e52c42496436669",
             "shasum": ""
         },
         "require": {
@@ -728,14 +779,14 @@
             "ext-zip": "Enabling the zip extension allows you to unzip archives",
             "ext-zlib": "Allow gzip compression of HTTP requests"
         },
-        "time": "2018-11-01T09:05:06+00:00",
+        "time": "2018-12-03T09:31:16+00:00",
         "bin": [
             "bin/composer"
         ],
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.7-dev"
+                "dev-master": "1.8-dev"
             }
         },
         "installation-source": "dist",
@@ -897,17 +948,17 @@
     },
     {
         "name": "composer/xdebug-handler",
-        "version": "1.3.0",
-        "version_normalized": "1.3.0.0",
+        "version": "1.3.1",
+        "version_normalized": "1.3.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/composer/xdebug-handler.git",
-            "reference": "b8e9745fb9b06ea6664d8872c4505fb16df4611c"
+            "reference": "dc523135366eb68f22268d069ea7749486458562"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/b8e9745fb9b06ea6664d8872c4505fb16df4611c",
-            "reference": "b8e9745fb9b06ea6664d8872c4505fb16df4611c",
+            "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/dc523135366eb68f22268d069ea7749486458562",
+            "reference": "dc523135366eb68f22268d069ea7749486458562",
             "shasum": ""
         },
         "require": {
@@ -917,7 +968,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5"
         },
-        "time": "2018-08-31T19:07:57+00:00",
+        "time": "2018-11-29T10:59:02+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1033,6 +1084,54 @@
         ]
     },
     {
+        "name": "firebase/php-jwt",
+        "version": "v5.0.0",
+        "version_normalized": "5.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/firebase/php-jwt.git",
+            "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/firebase/php-jwt/zipball/9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+            "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": " 4.8.35"
+        },
+        "time": "2017-06-27T22:17:23+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Firebase\\JWT\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Neuman Vong",
+                "email": "neuman+pear@twilio.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Anant Narayanan",
+                "email": "anant@php.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+        "homepage": "https://github.com/firebase/php-jwt"
+    },
+    {
         "name": "friendsofcake/bootstrap-ui",
         "version": "1.4.0",
         "version_normalized": "1.4.0.0",
@@ -1135,23 +1234,24 @@
     },
     {
         "name": "friendsofcake/crud",
-        "version": "5.4.5",
-        "version_normalized": "5.4.5.0",
+        "version": "5.4.6",
+        "version_normalized": "5.4.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/FriendsOfCake/crud.git",
-            "reference": "8129e2470b35f4381aace52353d0f6b7227714b1"
+            "reference": "f33e64939960e42ea0f728924e67ed4692cca66c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/8129e2470b35f4381aace52353d0f6b7227714b1",
-            "reference": "8129e2470b35f4381aace52353d0f6b7227714b1",
+            "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/f33e64939960e42ea0f728924e67ed4692cca66c",
+            "reference": "f33e64939960e42ea0f728924e67ed4692cca66c",
             "shasum": ""
         },
         "require": {
             "cakephp/cakephp": "^3.5"
         },
         "require-dev": {
+            "cakephp/chronos": "^1.1",
             "friendsofcake/cakephp-test-utilities": "^1.0",
             "friendsofcake/search": "^4.4",
             "muffin/webservice": "^1.3",
@@ -1162,7 +1262,7 @@
             "friendsofcake/crud-view": "Automated admin backend based on your Crud configuration.",
             "friendsofcake/search": "Provides search capabilities for the Crud plugin."
         },
-        "time": "2018-09-29T03:50:06+00:00",
+        "time": "2018-12-09T16:34:19+00:00",
         "type": "cakephp-plugin",
         "installation-source": "dist",
         "autoload": {
@@ -2549,23 +2649,23 @@
     },
     {
         "name": "psr/log",
-        "version": "1.0.2",
-        "version_normalized": "1.0.2.0",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/php-fig/log.git",
-            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+            "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+            "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
             "shasum": ""
         },
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-10-10T12:19:37+00:00",
+        "time": "2018-11-20T15:27:04+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3428,17 +3528,17 @@
     },
     {
         "name": "squizlabs/php_codesniffer",
-        "version": "3.3.2",
-        "version_normalized": "3.3.2.0",
+        "version": "3.4.0",
+        "version_normalized": "3.4.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-            "reference": "6ad28354c04b364c3c71a34e4a18b629cc3b231e"
+            "reference": "379deb987e26c7cd103a7b387aea178baec96e48"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/6ad28354c04b364c3c71a34e4a18b629cc3b231e",
-            "reference": "6ad28354c04b364c3c71a34e4a18b629cc3b231e",
+            "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/379deb987e26c7cd103a7b387aea178baec96e48",
+            "reference": "379deb987e26c7cd103a7b387aea178baec96e48",
             "shasum": ""
         },
         "require": {
@@ -3450,7 +3550,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
         },
-        "time": "2018-09-23T23:08:17+00:00",
+        "time": "2018-12-19T23:57:18+00:00",
         "bin": [
             "bin/phpcs",
             "bin/phpcbf"
@@ -3481,17 +3581,17 @@
     },
     {
         "name": "symfony/config",
-        "version": "v4.1.7",
-        "version_normalized": "4.1.7.0",
+        "version": "v4.2.1",
+        "version_normalized": "4.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/config.git",
-            "reference": "991fec8bbe77367fc8b48ecbaa8a4bd6e905a238"
+            "reference": "005d9a083d03f588677d15391a716b1ac9b887c0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/config/zipball/991fec8bbe77367fc8b48ecbaa8a4bd6e905a238",
-            "reference": "991fec8bbe77367fc8b48ecbaa8a4bd6e905a238",
+            "url": "https://api.github.com/repos/symfony/config/zipball/005d9a083d03f588677d15391a716b1ac9b887c0",
+            "reference": "005d9a083d03f588677d15391a716b1ac9b887c0",
             "shasum": ""
         },
         "require": {
@@ -3511,11 +3611,11 @@
         "suggest": {
             "symfony/yaml": "To use the yaml reference dumper"
         },
-        "time": "2018-10-31T09:09:42+00:00",
+        "time": "2018-11-30T22:21:14+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.2-dev"
             }
         },
         "installation-source": "dist",
@@ -3546,21 +3646,22 @@
     },
     {
         "name": "symfony/console",
-        "version": "v4.1.7",
-        "version_normalized": "4.1.7.0",
+        "version": "v4.2.1",
+        "version_normalized": "4.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/console.git",
-            "reference": "432122af37d8cd52fba1b294b11976e0d20df595"
+            "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/console/zipball/432122af37d8cd52fba1b294b11976e0d20df595",
-            "reference": "432122af37d8cd52fba1b294b11976e0d20df595",
+            "url": "https://api.github.com/repos/symfony/console/zipball/4dff24e5d01e713818805c1862d2e3f901ee7dd0",
+            "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3",
+            "symfony/contracts": "^1.0",
             "symfony/polyfill-mbstring": "~1.0"
         },
         "conflict": {
@@ -3581,11 +3682,11 @@
             "symfony/lock": "",
             "symfony/process": ""
         },
-        "time": "2018-10-31T09:30:44+00:00",
+        "time": "2018-11-27T07:40:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.2-dev"
             }
         },
         "installation-source": "dist",
@@ -3615,29 +3716,99 @@
         "homepage": "https://symfony.com"
     },
     {
-        "name": "symfony/filesystem",
-        "version": "v4.1.7",
-        "version_normalized": "4.1.7.0",
+        "name": "symfony/contracts",
+        "version": "v1.0.2",
+        "version_normalized": "1.0.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/filesystem.git",
-            "reference": "fd7bd6535beb1f0a0a9e3ee960666d0598546981"
+            "url": "https://github.com/symfony/contracts.git",
+            "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/filesystem/zipball/fd7bd6535beb1f0a0a9e3ee960666d0598546981",
-            "reference": "fd7bd6535beb1f0a0a9e3ee960666d0598546981",
+            "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+            "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^7.1.3"
+        },
+        "require-dev": {
+            "psr/cache": "^1.0",
+            "psr/container": "^1.0"
+        },
+        "suggest": {
+            "psr/cache": "When using the Cache contracts",
+            "psr/container": "When using the Service contracts",
+            "symfony/cache-contracts-implementation": "",
+            "symfony/service-contracts-implementation": "",
+            "symfony/translation-contracts-implementation": ""
+        },
+        "time": "2018-12-05T08:06:11+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Contracts\\": ""
+            },
+            "exclude-from-classmap": [
+                "**/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "A set of abstractions extracted out of the Symfony components",
+        "homepage": "https://symfony.com",
+        "keywords": [
+            "abstractions",
+            "contracts",
+            "decoupling",
+            "interfaces",
+            "interoperability",
+            "standards"
+        ]
+    },
+    {
+        "name": "symfony/filesystem",
+        "version": "v4.2.1",
+        "version_normalized": "4.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/filesystem.git",
+            "reference": "2f4c8b999b3b7cadb2a69390b01af70886753710"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/filesystem/zipball/2f4c8b999b3b7cadb2a69390b01af70886753710",
+            "reference": "2f4c8b999b3b7cadb2a69390b01af70886753710",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3",
             "symfony/polyfill-ctype": "~1.8"
         },
-        "time": "2018-10-30T13:18:25+00:00",
+        "time": "2018-11-11T19:52:12+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.2-dev"
             }
         },
         "installation-source": "dist",
@@ -3668,27 +3839,27 @@
     },
     {
         "name": "symfony/finder",
-        "version": "v4.1.7",
-        "version_normalized": "4.1.7.0",
+        "version": "v4.2.1",
+        "version_normalized": "4.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/finder.git",
-            "reference": "1f17195b44543017a9c9b2d437c670627e96ad06"
+            "reference": "e53d477d7b5c4982d0e1bfd2298dbee63d01441d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/finder/zipball/1f17195b44543017a9c9b2d437c670627e96ad06",
-            "reference": "1f17195b44543017a9c9b2d437c670627e96ad06",
+            "url": "https://api.github.com/repos/symfony/finder/zipball/e53d477d7b5c4982d0e1bfd2298dbee63d01441d",
+            "reference": "e53d477d7b5c4982d0e1bfd2298dbee63d01441d",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3"
         },
-        "time": "2018-10-03T08:47:56+00:00",
+        "time": "2018-11-11T19:52:12+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.2-dev"
             }
         },
         "installation-source": "dist",
@@ -3897,27 +4068,27 @@
     },
     {
         "name": "symfony/process",
-        "version": "v4.1.7",
-        "version_normalized": "4.1.7.0",
+        "version": "v4.2.1",
+        "version_normalized": "4.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/process.git",
-            "reference": "3e83acef94d979b1de946599ef86b3a352abcdc9"
+            "reference": "2b341009ccec76837a7f46f59641b431e4d4c2b0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/process/zipball/3e83acef94d979b1de946599ef86b3a352abcdc9",
-            "reference": "3e83acef94d979b1de946599ef86b3a352abcdc9",
+            "url": "https://api.github.com/repos/symfony/process/zipball/2b341009ccec76837a7f46f59641b431e4d4c2b0",
+            "reference": "2b341009ccec76837a7f46f59641b431e4d4c2b0",
             "shasum": ""
         },
         "require": {
             "php": "^7.1.3"
         },
-        "time": "2018-10-14T20:48:13+00:00",
+        "time": "2018-11-20T16:22:05+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.2-dev"
             }
         },
         "installation-source": "dist",
@@ -3948,17 +4119,17 @@
     },
     {
         "name": "symfony/var-dumper",
-        "version": "v4.1.7",
-        "version_normalized": "4.1.7.0",
+        "version": "v4.2.1",
+        "version_normalized": "4.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-dumper.git",
-            "reference": "60319b45653580b0cdacca499344577d87732f16"
+            "reference": "db61258540350725f4beb6b84006e32398acd120"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/60319b45653580b0cdacca499344577d87732f16",
-            "reference": "60319b45653580b0cdacca499344577d87732f16",
+            "url": "https://api.github.com/repos/symfony/var-dumper/zipball/db61258540350725f4beb6b84006e32398acd120",
+            "reference": "db61258540350725f4beb6b84006e32398acd120",
             "shasum": ""
         },
         "require": {
@@ -3980,14 +4151,14 @@
             "ext-intl": "To show region name in time zone dump",
             "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
         },
-        "time": "2018-10-02T16:36:10+00:00",
+        "time": "2018-11-25T12:50:42+00:00",
         "bin": [
             "Resources/bin/var-dump-server"
         ],
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.2-dev"
             }
         },
         "installation-source": "dist",
@@ -4025,17 +4196,17 @@
     },
     {
         "name": "symfony/yaml",
-        "version": "v4.1.7",
-        "version_normalized": "4.1.7.0",
+        "version": "v4.2.1",
+        "version_normalized": "4.2.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
-            "reference": "367e689b2fdc19965be435337b50bc8adf2746c9"
+            "reference": "c41175c801e3edfda90f32e292619d10c27103d7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/yaml/zipball/367e689b2fdc19965be435337b50bc8adf2746c9",
-            "reference": "367e689b2fdc19965be435337b50bc8adf2746c9",
+            "url": "https://api.github.com/repos/symfony/yaml/zipball/c41175c801e3edfda90f32e292619d10c27103d7",
+            "reference": "c41175c801e3edfda90f32e292619d10c27103d7",
             "shasum": ""
         },
         "require": {
@@ -4051,11 +4222,11 @@
         "suggest": {
             "symfony/console": "For validating YAML files using the lint command"
         },
-        "time": "2018-10-02T16:36:10+00:00",
+        "time": "2018-11-11T19:52:12+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "4.1-dev"
+                "dev-master": "4.2-dev"
             }
         },
         "installation-source": "dist",
@@ -4128,17 +4299,17 @@
     },
     {
         "name": "twig/twig",
-        "version": "v1.35.4",
-        "version_normalized": "1.35.4.0",
+        "version": "v1.36.0",
+        "version_normalized": "1.36.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/twigphp/Twig.git",
-            "reference": "7e081e98378a1e78c29cc9eba4aefa5d78a05d2a"
+            "reference": "730c9c4471b5152d23061feb02b03382264c8a15"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/twigphp/Twig/zipball/7e081e98378a1e78c29cc9eba4aefa5d78a05d2a",
-            "reference": "7e081e98378a1e78c29cc9eba4aefa5d78a05d2a",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/730c9c4471b5152d23061feb02b03382264c8a15",
+            "reference": "730c9c4471b5152d23061feb02b03382264c8a15",
             "shasum": ""
         },
         "require": {
@@ -4148,13 +4319,13 @@
         "require-dev": {
             "psr/container": "^1.0",
             "symfony/debug": "^2.7",
-            "symfony/phpunit-bridge": "^3.3"
+            "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
         },
-        "time": "2018-07-13T07:12:17+00:00",
+        "time": "2018-12-16T10:34:11+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.35-dev"
+                "dev-master": "1.36-dev"
             }
         },
         "installation-source": "dist",
@@ -4291,24 +4462,24 @@
     },
     {
         "name": "wyrihaximus/twig-view",
-        "version": "4.3.5",
-        "version_normalized": "4.3.5.0",
+        "version": "4.3.8",
+        "version_normalized": "4.3.8.0",
         "source": {
             "type": "git",
             "url": "https://github.com/WyriHaximus/TwigView.git",
-            "reference": "ec2771e6a1fe799f9b16eff19da424cd04d593b7"
+            "reference": "a5ec66690aa045d6eda17ab1c8a5baf0efdcfa45"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/WyriHaximus/TwigView/zipball/ec2771e6a1fe799f9b16eff19da424cd04d593b7",
-            "reference": "ec2771e6a1fe799f9b16eff19da424cd04d593b7",
+            "url": "https://api.github.com/repos/WyriHaximus/TwigView/zipball/a5ec66690aa045d6eda17ab1c8a5baf0efdcfa45",
+            "reference": "a5ec66690aa045d6eda17ab1c8a5baf0efdcfa45",
             "shasum": ""
         },
         "require": {
             "ajgl/breakpoint-twig-extension": "^0.3.0",
             "aptoma/twig-markdown": "^2.0",
             "asm89/twig-cache-extension": "^1.0",
-            "cakephp/cakephp": "^3.5",
+            "cakephp/cakephp": "^3.6",
             "jasny/twig-extensions": "^1.0",
             "php": "^5.6 || ^7.0",
             "twig/twig": "^1.27",
@@ -4322,7 +4493,7 @@
             "squizlabs/php_codesniffer": "^1.5.6",
             "wyrihaximus/phpunit-class-reflection-helpers": "dev-master"
         },
-        "time": "2018-07-03T15:46:29+00:00",
+        "time": "2018-12-17T21:08:25+00:00",
         "type": "cakephp-plugin",
         "installation-source": "dist",
         "autoload": {
