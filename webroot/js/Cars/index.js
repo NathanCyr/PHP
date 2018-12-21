@@ -89,12 +89,12 @@ app.controller('usersCtrl', function ($scope, $compile, $http) {
 app.controller('CarCRUDController', ['$scope','CarCRUDService', function ($scope,CarCRUDService) {
 	  
     $scope.updateCar = function () {
-        CarCRUDService.updateCar($scope.car.id,$scope.car.model)
+        CarCRUDService.updateCar($scope.cars.id,$scope.cars.model, $scope.cars.manufacturerCode, $scope.cars.yearManufacture)
           .then(function success(response){
               $scope.message = 'Car data updated!';
               $scope.errorMessage = '';
-              $scope.car.id = '';
-              $scope.car.model = '';
+              $scope.cars.id = '';
+              $scope.cars.model = '';
               $scope.getAllCars();
           },
           function error(response){
@@ -107,8 +107,8 @@ app.controller('CarCRUDController', ['$scope','CarCRUDService', function ($scope
 
         CarCRUDService.getCar($id)
           .then(function success(response){
-              $scope.car = response.data.data;
-              $scope.car.id = $id;
+              $scope.cars = response.data.data;
+              $scope.cars.id = $id;
               $scope.message='';
               $scope.errorMessage = '';
               $scope.getAllCars();
@@ -126,15 +126,15 @@ app.controller('CarCRUDController', ['$scope','CarCRUDService', function ($scope
     }
     
     $scope.addCar = function () {
-        if ($scope.car != null && $scope.car.model) {
-            CarCRUDService.addCar($scope.car.model)
+        if ($scope.cars != null && $scope.cars.model, $scope.cars.manufacturerCode, $scope.cars.yearManufacture) {
+            CarCRUDService.addCar($scope.cars.model, $scope.cars.manufacturerCode, $scope.cars.yearManufacture)
               .then (function success(response){
                   $scope.message = 'Car added!';
                   $scope.errorMessage = '';
-                  $scope.car.id = '';
-                  $scope.car.model = '';
-                  $scope.car.manufacturerCode = '';
-                  $scope.car.yearManufacture = '';
+                  $scope.cars.id = '';
+                  $scope.cars.model = '';
+                  $scope.cars.manufacturerCode = '';
+                  $scope.cars.yearManufacture = '';
                   $scope.getAllCars();
               },
               function error(response){
@@ -152,7 +152,7 @@ app.controller('CarCRUDController', ['$scope','CarCRUDService', function ($scope
         CarCRUDService.deleteCar($id)
           .then (function success(response){
               $scope.message = 'Car deleted!';
-              $scope.car = null;
+              $scope.cars = null;
               $scope.errorMessage='';
               $scope.getAllCars();
           },
@@ -187,11 +187,13 @@ app.service('CarCRUDService',['$http', function ($http) {
         });
 	}
 	
-    this.addCar = function addCar(model){
+    this.addCar = function addCar(model, manufacturerCode, yearManufacture){
         return $http({
           method: 'POST',
           url: urlToRestApi,
           data: {model:model},
+          data: {manufacturerCode:manufacturerCode},
+          data: {yearManufacture:yearManufacture},
           headers: { 'X-Requested-With' : 'XMLHttpRequest', 'Accept' : 'application/json'}
         });
     }

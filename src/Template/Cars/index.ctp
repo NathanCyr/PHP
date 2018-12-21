@@ -61,25 +61,25 @@ echo $this->Html->script('Cars/index', ['block' => 'scriptBottom']);
 				<table>
 					<tr>
 						<td width="100">ID:</td>
-						<td><input type="text" id="id" ng-model="car.id" /></td>
+						<td><input type="text" id="id" ng-model="cars.id" /></td>
 					</tr>
 					<tr>
 						<td width="100">Model:</td>
-						<td><input type="text" id="model" ng-model="car.model" /></td>
+						<td><input type="text" id="model" ng-model="cars.model" /></td>
 					</tr>
 					<tr>
 						<td width="100">Car manufacturer code:</td>
-						<td><input type="text" id="car_manufacturer_code" ng-model="car.manufacturerCode" /></td>
+						<td><input type="text" id="car_manufacturer_code" ng-model="cars.manufacturerCode" /></td>
 					</tr>
 					<tr>
 						<td width="100">Car year of manufacture:</td>
-						<td><input type="text" id="car_year_of_manufacture" ng-model="car.yearManufacture" /></td>
+						<td><input type="text" id="car_year_of_manufacture" ng-model="cars.yearManufacture" /></td>
 					</tr>
 
 				</table>
 				<br /> <br /> 
-				<a ng-click="updateCar(car.id,car.model)">Update car</a> 
-				<a ng-click="addCar(car.model)">Add car</a> 
+				<a ng-click="updateCar(cars.id,cars.model,cars.manufacturerCode,cars.yearManufacture)">Update car</a> 
+				<a ng-click="addCar(cars.model,cars.manufacturerCode,cars.yearManufacture)">Add car</a> 
 			<br /> <br />
 			<p style="color: green">{{message}}</p>
 			<p style="color: red">{{errorMessage}}</p>
@@ -92,13 +92,13 @@ echo $this->Html->script('Cars/index', ['block' => 'scriptBottom']);
 									<th>Action</th>
 								</tr>
 							</thead>
-										<tr ng-repeat="car in cars">
-											<td>{{car.id}}</td>
-											<td>{{car.model}}</td>
+										<tr ng-repeat="cars in car">
+											<td>{{cars.id}}</td>
+											<td>{{cars.model}}</td>
 											
 											<td>
-												<a href="javascript:void(0);" class="glyphicon glyphicon-edit" ng-click="getCar(car.id)"></a>
-												<a href="javascript:void(0);" class="glyphicon glyphicon-trash" ng-click="deleteCar(car.id)"></a>
+												<a href="javascript:void(0);" class="glyphicon glyphicon-edit" ng-click="getCar(cars.id)"></a>
+												<a href="javascript:void(0);" class="glyphicon glyphicon-trash" ng-click="deleteCar(cars.id)"></a>
 											</td>
 										</tr>
 						</table>

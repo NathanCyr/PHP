@@ -10283,3 +10283,756 @@ Stack Trace:
 #15 {main}
 
 
+2018-12-21 18:10:58 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:11:15 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:12:51 Error: [Crud\Error\Exception\ValidationException] 3 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:16:46 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:17:10 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:18:12 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:18:22 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:27:56 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars?model=Toyota%20Corolla&id=6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-21 18:29:19 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars?model=Toyota%20Corolla&id=6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-21 18:29:57 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars?model=Toyota%20Corolla&id=6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-21 18:30:09 Error: [Cake\Http\Exception\UnauthorizedException] You are not authorized to access that location.
+Request URL: /api/cars?model=Toyota%20Corolla&id=6
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(387): ADmad\JwtAuth\Auth\JwtAuthenticate->unauthenticated(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(316): Cake\Controller\Component\AuthComponent->_unauthenticated(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Controller\Component\AuthComponent->authCheck(Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Controller\Controller.php(671): Cake\Controller\Controller->dispatchEvent('Controller.init...')
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(115): Cake\Controller\Controller->startupProcess()
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-12-21 18:48:39 Error: [Cake\Controller\Exception\MissingActionException] Action CarsController::undefined() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CarsController',
+  'action' => 'undefined',
+  'prefix' => 'api',
+  'plugin' => false,
+)
+Request URL: /api/cars/undefined
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-12-21 18:48:54 Error: [Cake\Controller\Exception\MissingActionException] Action CarsController::undefined() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CarsController',
+  'action' => 'undefined',
+  'prefix' => 'api',
+  'plugin' => false,
+)
+Request URL: /api/cars/undefined
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-12-21 18:49:54 Error: [Cake\Controller\Exception\MissingActionException] Action CarsController::undefined() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CarsController',
+  'action' => 'undefined',
+  'prefix' => 'api',
+  'plugin' => false,
+)
+Request URL: /api/cars/undefined
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-12-21 18:50:07 Error: [Crud\Error\Exception\ValidationException] 3 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:50:44 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:51:24 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:52:44 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:54:47 Error: [Crud\Error\Exception\ValidationException] 3 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 18:57:45 Error: [Crud\Error\Exception\ValidationException] 2 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 19:00:05 Error: [Crud\Error\Exception\ValidationException] 3 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 19:10:16 Error: [Crud\Error\Exception\ValidationException] 3 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 19:12:58 Error: [Crud\Error\Exception\ValidationException] 3 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-12-21 19:14:10 Error: [Crud\Error\Exception\ValidationException] 3 validation errors occurred
+Request URL: /api/cars
+Referer URL: http://localhost/Cyr_Nathan_TP3/cars
+Stack Trace:
+#0 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Listener\ApiListener.php(124): Crud\Listener\ApiListener->_exceptionResponse(Object(Cake\Event\Event), Array)
+#1 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Crud\Listener\ApiListener->respond(Object(Cake\Event\Event))
+#2 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#3 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(540): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#4 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Core\ProxyTrait.php(38): Crud\Controller\Component\CrudComponent->trigger('Crud.beforeRend...', Object(Crud\Event\Subject))
+#5 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(171): Crud\Core\BaseObject->_trigger('beforeRender', Object(Crud\Event\Subject))
+#6 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\AddAction.php(130): Crud\Action\AddAction->_error(Object(Crud\Event\Subject))
+#7 [internal function]: Crud\Action\AddAction->_post()
+#8 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Action\BaseAction.php(64): call_user_func_array(Array, Array)
+#9 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\Component\CrudComponent.php(244): Crud\Action\BaseAction->handle(Array)
+#10 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\friendsofcake\crud\src\Controller\ControllerTrait.php(68): Crud\Controller\Component\CrudComponent->execute()
+#11 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): App\Controller\Api\AppController->invokeAction()
+#12 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\Api\CarsController))
+#13 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(156): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\Program Files (x86)\Ampps\www\Cyr_Nathan_TP3\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
